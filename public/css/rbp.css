@@ -1,0 +1,360 @@
+/* RBP CSS by Abhi Nayar */
+
+/* 
+Color Lib:
+---------------------
+Dark purple: #623c91
+Light purple: #beb0d4
+Dull white: #f8f8f8
+McD Red: #b64817
+Hardie Green: #006634
+Corvette Black: #050505
+Off black: #1d1f20
+*/
+
+/* Font sizes:
+----------------------
+Landing p: 18px;
+Other p: 14px;
+h4: 18px; (small heading)
+h2: 36px (testimonials)
+*/
+
+@font-face {
+    font-family: MS;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: MSThin;
+    src: url('../fonts/Montserrat-Thin.ttf');
+}
+
+@font-face {
+    font-family: MSLight;
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: MSBold;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	height:100%;
+	font-family: "MS";
+	padding:0;
+	margin:0;
+	font-size:16px;
+	line-height: 20px;
+	overflow-x:hidden;
+	position: relative;
+}
+
+h1, h2, h3, h4, p, a, div {
+    -webkit-text-stroke: 0px
+}
+
+.bold {
+    font-family: "MSBold";
+}
+
+.normal {
+    font-family: "MS";
+}
+
+.light {
+    font-family: "MSLight";
+}
+
+.thin {
+    font-family: "MSThin";
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.med-text {
+    font-size: 36px;
+}
+
+.sm-title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.sm-text {
+    font-size: 14px;
+}
+
+.no-pad {
+    padding: 0px;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.hov {
+    cursor: pointer;
+}
+
+/* Services Rollout */
+.services .item {
+    color: #fff;
+    text-align: center;
+    background-position: center center;
+    background-size: auto 100%;
+    height: 440px;
+}
+
+.services .item.right-brain-research {
+    background: url('../img/services/rightBrainResearch.jpg');
+}
+
+.services .item.emotional-segmentation {
+    background: url('../img/services/segmentation.jpg');
+    background-position: center -115px;
+}
+
+.services .item.strategy-workshop {
+    background: url('../img/services/strategyWorkshop.jpg');
+    background-position: -100px center;
+}
+ 
+.services .item .number-wrapper span {
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 65px;
+    padding-top: 12px;  
+    border: 1px solid #f8f8f8;
+}
+
+.services .service-title {
+    padding: 0 90px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.services .service-hr {
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.services .service-desc {
+    padding: 0 85px;
+    margin-top: 30px;
+}
+
+.services .services-desc p {
+    
+}
+
+/* Brand Stories */
+.brand-stories-start {
+    color: #fff;
+    height: 180px;
+    background: #623c91;
+}
+
+.brand-stories-title {
+    padding-top: 40px;
+    margin-top: 0px;
+}
+
+.sm-title-hr {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.brand-stories-title-desc {
+    width: 445px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+.brand-story {
+    height: 400px;
+    color: #fff;
+}
+
+.brand-story-bg{
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.brand-story-bg.mcDonalds {
+    background: url('../img/brand-stories/bg/mcDonalds.jpg');
+    background-position: bottom;
+}
+
+.brand-story-bg.hardie {
+    background: url('../img/brand-stories/bg/hardie.jpg');
+}
+
+.brand-story-bg.corvette {
+    background: url('../img/brand-stories/bg/corvette.jpg');
+}
+
+.brand-story .brand-story-logo {
+    width: 120px;
+    margin-top: 45px;
+}
+
+.brand-story.corvette .brand-story-logo {
+    width: 200px;
+    margin-top: 45px;
+}
+
+.brand-story.hardie .brand-story-logo {
+    margin-top: 50px;
+}
+
+.brand-story.corvette .brand-story-logo {
+    margin-top: 65px;
+}
+
+.brand-story .brand-story-logo img {
+    max-width: 100%;
+}
+
+.brand-story .brand-story-title {
+    margin-top: -10px;
+}
+
+.brand-story .brand-story-text {
+    max-width: 335px;
+}
+
+.brand-story .brand-story-read-more a {
+    color: #fff;  
+    display: inline-block;  
+    padding: 8px 20px;
+    border: 2px solid #fff; 
+    margin-top: 12px;
+}
+
+.brand-story .brand-story-large-img img {
+    margin-top: 45px;
+    max-width: 100%;
+}
+
+.brand-story.corvette .brand-story-large-img img {
+    margin-top: 150px;
+}
+
+.brand-story .content-left {
+    max-width: 38%;
+    margin-left: 2%;
+}
+
+.brand-story .content-right {
+    max-width: 58%;
+    margin-right: 2%;
+}
+
+/* Clients */
+.clients-section {
+    height: 520px;
+}
+
+.clients-section .client-list-container {
+    height: 520px;
+    background: url(../img/clients/purple-bg-underlay.jpg);
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.clients-section .section-title {
+    color: #aaaaaa;
+    margin-top: 80px;
+}
+
+.clients-section .client-row {
+    color: #fff;
+}
+
+.clients-section ul {
+    line-height: 2.3em;
+    margin-top: 30px;
+    font-size: 14px;    
+}
+
+.clients-section ul.left {
+    margin-right: 25px;
+}
+
+.clients-section ul.right {
+    margin-left: 25px;
+}
+
+.clients-section .see-more-button a {
+    display: inline-block;
+    padding: 8px 38px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Clients - Desc section */
+.clients-section .desc-item {
+    color: #1d1f20;
+    width: 345px;
+    margin: 0 auto;
+    margin-left: 30%;
+    margin-bottom: 45px;
+}
+
+.clients-section .desc-item:first-of-type {
+    margin-top: 80px;
+}
+
+.clients-section .desc-item .desc-title:before {
+    content: '';
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center center;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -5px;
+}
+
+.clients-section .desc-item.cli-num .desc-title:before {
+    background-image: url('../img/icons/briefcase.jpg');
+    margin-top: -8px;
+}
+
+.clients-section .desc-item.prod-cat .desc-title:before {
+    background-image: url('../img/icons/list.jpg');
+}
+
+.clients-section .desc-item.yrs-exp .desc-title:before {
+    background-image: url('../img/icons/time.jpg');
+}
+
+
+
