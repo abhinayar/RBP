@@ -268,7 +268,6 @@ h1, h2, h3, h4, p, a, div {
         transform: translateX(0)
     }
 }
-
 @keyframes moveSlideshow {
     0% {
         -webkit-transform: translateX(0);
