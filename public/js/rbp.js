@@ -21,9 +21,11 @@ $(document).ready(function(){
 
         google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
         infowindow.open(map,marker);
-   
+       
+       setTimeout(function(){
+            $(".landing .moving-bg").addClass("animate");
+        }, 1000);   
    }
     
     google.maps.event.addDomListener(window, 'load', init_map); 
-    
 });
