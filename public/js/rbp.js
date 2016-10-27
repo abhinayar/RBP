@@ -62,9 +62,25 @@ $(document).ready(function(){
         } else {
             $(".landing-nav").removeClass("affixed");
         }
-    });
+    });    
     
     
+    var desktopFonts = "@font-face { font-family: MS; src: url('../fonts/Montserrat-Regular.ttf'); } @font-face { font-family: MSThin; src: url('../fonts/Montserrat-Thin.ttf'); } @font-face { font-family: MSLight; src: url('../fonts/Montserrat-Light.ttf'); } @font-face { font-family: MSBold; src: url('../fonts/Montserrat-Bold.ttf'); }";
+    
+    var mobileFonts = "@font-face { font-family: MS; src: url('../fonts/Montserrat-Regular.ttf'); } @font-face { font-family: MSThin; src: url('../fonts/Montserrat-Light.ttf'); } @font-face { font-family: MSLight; src: url('../fonts/Montserrat-Regular.ttf'); } @font-face { font-family: MSBold; src: url('../fonts/Montserrat-Bold.ttf'); }";
+    
+
+    if($("body").css("animation")[0] == "mob") {
+        var style = document.createElement("style");
+        style.innerHTML = mobileFonts;
+        $("head").append(style);
+    }
+    
+    else {
+        var style = document.createElement("style");
+        style.innerHTML = desktopFonts;
+        $("head").append(style);
+    }
 });
 
 /* Loader */
