@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<div class="excerpts">
+		</div>
+		 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script>
+			var url = "http://www.creativedreamrz.in/php/rightbrainblog/api/get_recent_posts/";
+			$.getJSON( url, function(data) { 
+				var items = []; 
+				$.each(data.posts, function(item, i) { 
+					items.push(item.excerpt);
+					var br = $("<br/>");
+					$('.excerpts').append(item.excerpt, br);
+				});
+			});
+		</script>
+	</body>
+</html>
