@@ -74,12 +74,14 @@ $(document).ready(function(){
         var style = document.createElement("style");
         style.innerHTML = mobileFonts;
         $("head").append(style);
+        alert("mobile detected");
     }
     
     else {
         var style = document.createElement("style");
         style.innerHTML = desktopFonts;
         $("head").append(style);
+        alert("desktop");
     }
 });
 

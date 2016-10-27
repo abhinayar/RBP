@@ -1853,7 +1853,7 @@ body.loading {
 }
 
 /* Mobile Testing */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
     body {
         animation: mob;
     }
