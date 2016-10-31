@@ -5,7 +5,6 @@ $(document).ready(function(){
         var i = 0;
         $.each($(".client-list-section ul.client-list li"), function(i, item){
             $(item).html(smallList[i]);
-            alert(item);
             i++;
         });
     } 
