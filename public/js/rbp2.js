@@ -17,8 +17,14 @@ $(document).ready(function(){
     $(window).on('scroll load', function() {
         if ($(window).scrollTop() > 1 || $("body").scrollTop() > 1) {
             $(".navigation").addClass("affixed");
+            $("ul.desktop-nav-ul").addClass("closed");
         } else {
             $(".navigation").removeClass("affixed");
+            $("ul.desktop-nav-ul").removeClass("closed");
         }
     });
+    
+    $(".desktop-nav-rollout").on('click', function(){
+        $("ul.desktop-nav-ul").toggleClass("closed");
+    })
 });

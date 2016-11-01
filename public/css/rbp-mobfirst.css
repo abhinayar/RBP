@@ -40,6 +40,11 @@ h2: 36px (testimonials)
     src: url('../fonts/Montserrat-Bold.ttf');
 }
 
+@font-face {
+    font-family: MSEdge;
+    src: url('../fonts/Montserrat-Thin.ttf');
+}
+
 html, body {
     width: 100%;
     overflow-x: hidden;
@@ -172,20 +177,34 @@ h1, h2, h3, h4, p, a, div {
     background: #fff !important;
 }
 
-/* Nav Stuff */
+/* Nav */
 /* Mobile Nav */
 .navigation {
     padding-top: 15px;
     position: absolute;
     width: 100%;
+    z-index: 999;
 }
 
 .navigation.affixed {
-    background: #beb0d4;
+    background: #f1eafc;
     padding-bottom: 15px;
     border-bottom: 4px solid #623c91;
     position: fixed;
     z-index: 998;
+}
+
+@media (min-width: 992px) {
+    .navigation.affixed {
+        background: none;
+        border: none;
+        position: fixed;
+        z-index: 998;
+    }
+    
+    .navigation.affixed .hero {
+        display: none;
+    }
 }
 
 .navigation.affixed .mobile-hamburger i {
@@ -237,10 +256,10 @@ h1, h2, h3, h4, p, a, div {
     padding-top: 60px;
     padding-left: 0px;
     text-align: center;
-    -webkit-transition: right 0.4s;
-  -moz-transition: right 0.4s;
-  -ms-transition: right 0.4s;
-  transition: right 0.4s;
+    -webkit-transition: right 0.25s;
+  -moz-transition: right 0.25s;
+  -ms-transition: right 0.25s;
+  transition: right 0.25s;
 }
 
 .mobile-nav-ul.closed {
@@ -270,6 +289,58 @@ h1, h2, h3, h4, p, a, div {
 
 .close-mobile-nav i {
     font-size: 21px;
+}
+
+/* Desktop Nav */
+.desktop-nav {
+    position: absolute;
+    right: 10%;
+    height: 55px;
+    width: 550px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.desktop-nav-rollout {
+    content: '';
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    cursor: pointer;
+    background-image: url(../img/common/trans-nav-rollin.png);
+    background-size: cover;
+}
+
+.desktop-nav ul {
+    position: absolute;
+    z-index: 996;
+    list-style: none;
+    width: 550px;
+    height: 55px;
+    padding-left: 8px;
+    background-image: url(../img/common/trans-nav-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    right: 0;
+    transition: right 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.desktop-nav ul.closed {
+    right: -550px;
+}
+
+.desktop-nav ul li {
+    display: inline-block;
+    margin-top: 17px;
+}
+
+.desktop-nav ul li a {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'MSThin';
+    padding: 0px 15px;
 }
 
 /* Mobile First Design */
@@ -308,7 +379,7 @@ h1, h2, h3, h4, p, a, div {
 
 .landing .landing-content .landing-buttons a {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 10px 18px;
     font-weight: MSThin;
     text-decoration: none;
 }
@@ -317,24 +388,25 @@ h1, h2, h3, h4, p, a, div {
     color: #fff;
     background: #623c91;
     margin-right: 10px;
+    transition: all 100ms ease-out;
+}
+
+.landing-buttons a.learn-more:hover {
+    background: #7b4bb6;
+    transition: all 50ms ease-in;
 }
 
 .landing-buttons a.our-clients {
-    padding: 7px 11px !important;
+    padding: 8px 16px !important;
 }
 
 .landing-scroll-bg {
     display: inline-block;
     height: 200px;
-    width: 100%;
+    min-width: 1825px;
     background-image: url("../img/landing/logos_mobile.jpg");
-    
     bottom: 0;
     top: 0;
-    height: 200px;
-    width: 300%;
-     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
     background-size: auto 100%;
     background-position: center left;
     background-repeat: repeat-x;
@@ -343,37 +415,21 @@ h1, h2, h3, h4, p, a, div {
 
 /* Animated */
 .landing-scroll-bg {
-    -webkit-animation: moveSlideshow 60s linear infinite;
-    animation: moveSlideshow 60s linear infinite;
+    -webkit-animation: moveSlideshow 10s linear infinite;
+    animation: moveSlideshow 10s linear infinite;
 }
 
-@-webkit-keyframes moveSlideshow {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-    50% {
-        -webkit-transform: translateX(-33.6666%);
-        transform: translateX(-33.6666%)
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
+@media (min-width: 550px) {
+    .landing-scroll-bg {
+        -webkit-animation: moveSlideshowMid 5s linear infinite;
+        animation: moveSlideshowMid 5s linear infinite;
     }
 }
 
-@keyframes moveSlideshow {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-    50% {
-        -webkit-transform: translateX(-33.6666%);
-        transform: translateX(-33.6666%)
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
+@media (min-width: 750px) {
+    .landing-scroll-bg {
+        -webkit-animation: moveSlideshowTablet 5s linear infinite;
+        animation: moveSlideshowTablet 5s linear infinite;
     }
 }
 
@@ -407,6 +463,119 @@ h1, h2, h3, h4, p, a, div {
         margin-bottom: 60px;
     }
 }
+
+@media (min-width: 992px) {
+    .hero {
+        overflow: hidden;
+        width: 160px;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    
+    .landing {
+        background-image: url(../img/landing/p_overlay.png);
+        background-position: -150px center;
+        width: 100%;
+        height: 720px;
+        z-index: 2;
+    }
+    
+    .landing-scroll-bg {
+        position: absolute;
+        animation: moveSlideshowDesktop 6s linear infinite;
+        height: 720px;
+        background-image: url(../img/landing/logos.jpg);
+        background-position: center right;
+        z-index: -1;
+    }
+    
+    .landing .landing-content {
+        float: left;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        margin-left: 10%;
+    }
+    
+    .landing .landing-content .landing-logo {
+        width: 400px;
+        margin: 0;
+        margin-top: 140px;
+
+    }
+
+    .landing .landing-content .landing-logo img {
+        max-width: 100%;
+    }
+
+    .landing .landing-content .landing-desc {
+        color: #fff;
+        font-family: 'MSEdge';
+        width: 40%;
+        margin: 0;
+        margin-top: 40px;
+        font-size: 18px;
+        font-family: 'MSEdge';
+        line-height: 1.5em;
+        text-align: left;
+    }
+    
+    .landing .landing-content .landing-desc p {
+        font-family: MSEdge;
+    }
+
+    .landing .landing-content .landing-buttons {
+        margin: 0;
+        text-align: left;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .landing .landing-content .landing-buttons a {
+        font-size: 18px;
+        padding: 12px 28px;
+        font-family: MSThin;
+        text-decoration: none;
+    }
+    
+    .landing .landing-content .landing-buttons a.our-clients {
+        padding: 10px 26px !important;
+    }
+}
+
+@media (min-width: 1100px) {
+    .landing {
+        background-position: -100px center;
+    }
+    
+    .landing .landing-content .landing-logo {
+        width: 400px;
+        margin: 0;
+        margin-top: 160px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing {
+        background-position: -50px center;
+    }
+    
+    .landing .landing-content .landing-logo {
+        width: 400px;
+        margin: 0;
+        margin-top: 180px;
+
+    }
+}
+
+@media (min-width: 1300px) {
+    .landing {
+        background-position: 0px center;
+    }
+}
+
+/* What We Do Description */
 
 .what-we-do-container {
     background: #623c91;
@@ -448,6 +617,24 @@ hr.section-title-hr {
         width: 50%;
     }
 }
+
+@media (min-width: 992px) {
+    .brand-stories-title-container .section-desc p {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-desc p {
+        width: 40%;
+    }
+    
+    .brand-stories-title-container .section-desc p {
+        width: 32%;
+    }
+}
+
+/* Services Three Col */
 
 .services-container .service-item {
     background-size: cover;
@@ -547,8 +734,61 @@ hr.section-title-hr {
     }
 }
 
+@media (min-width: 768px) {
+    .service-item h2 {
+        font-size: 26px;    
+    }
+    
+    .service-item hr.service-hr {
+        width: 160px;
+    }
+    
+    .service-item .service-desc p {
+        width: 70%;
+    }
+    
+    .service-content {
+        height: 460px;
+    }
+    
+    .service-number {
+        margin-top: 60px;
+    }
+    
+    .service-item .service-content {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 900px) {
+    .service-content {
+        height: 440px;
+    }
+    
+    .service-item h2 {
+        font-size: 32px;    
+    }
+    
+    .service-item .service-content {
+        padding-top: 65px;
+    }
+}
+
+@media (min-width: 992px) {
+    .service-item hr.service-hr {
+        width: 100px;
+    }
+    
+    .service-content:hover {
+        transform: scale(1.08);
+        transition: 0.05s all ease-in;
+    }
+}
+
+/* Brand Stories Desc */
+
 .brand-stories-title-container {
-    background: #beb0d4;
+    background: #f1eafc;
     color: #1d1f20;
 }
 
@@ -556,9 +796,10 @@ hr.section-title-hr {
     border-color: #1d1f20;
 }
 
+/* Brand Stories */
+
 .brand-story-bg {
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -574,14 +815,17 @@ hr.section-title-hr {
 
 .brand-story.mcdonalds {
     background-image: url(../img/brand-stories/bg/mcDonalds.jpg);
+    background-position: bottom center;
 }
 
 .brand-story.hardie {
     background-image: url(../img/brand-stories/bg/hardie.jpg);
+    background-position: center center;
 }
 
 .brand-story.corvette {
     background-image: url(../img/brand-stories/bg/corvette.jpg);
+    background-position: center center;    
 }
 
 .brand-story .brand-story-logo {
@@ -641,6 +885,204 @@ hr.section-title-hr {
     }
 }
 
+@media (min-width: 768px) {
+    .brand-story .container {
+        width: 100%;
+    }
+    
+    .brand-story {
+        height: 430px;
+    }
+    
+    .brand-story.corvette .brand-story-title {
+        margin-top: 40px;
+    }
+    
+    .brand-story.hardie .brand-story-title {
+        margin-top: 24px;
+    }
+    
+    .brand-story-title h2 {
+        font-size: 26px;
+    }
+    
+    .brand-story .brand-story-logo {
+        margin-top: 40px;
+    }
+    
+    .brand-story.corvette .brand-story-logo {
+        margin-top: 70px;
+    }
+    
+    .brand-story-desc p {
+        width: 85%;
+        height: 125px;
+    }
+}
+
+@media (min-width: 800px) {
+    .brand-story {
+        height: 420px;
+    }
+    
+    .brand-story-desc p {
+        width: 85%;
+        height: 110px;
+    }
+}
+
+@media (min-width: 850px) {
+    .brand-story-desc p {
+        height: 100px;
+    }
+    
+    .brand-story {
+        height: 410px;
+    }
+    
+    .brand-story-title h2 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .brand-story-title h2 {
+        font-size: 36px;
+    }
+    
+    .brand-story .container {
+        width: 970px;
+    }
+    
+    .brand-story, .brand-story-content, .brand-story-desc p {
+        text-align: left;
+    }
+    
+    .brand-story-content {
+        float: left;
+        position: absolute;
+        width: 30%;
+        height: 99%;
+        left: 10%;
+    }
+    
+    .brand-story.hardie .brand-story-content {
+        float: right;
+        right: 10%;
+        left: auto;
+    }
+    
+    .brand-story.mcdonalds .brand-story-desc p {
+        width: 90%;
+    }
+    
+    .brand-story-desc p {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    .brand-story-image {
+        width: 60%;
+        float: right;
+        position: absolute;
+        padding-top: 50px;
+        right: 5%;
+    }
+    
+    .brand-story.corvette .brand-story-image {
+        padding-top: 150px;
+    }
+    
+    .brand-story.mcdonalds .brand-story-image {
+        padding-top: 90px;
+    }
+    
+    .brand-story.corvette .brand-story-image img {
+        float: right;
+    }
+    
+    .brand-story.hardie .brand-story-image {
+        float: left;
+        right: auto;
+        left: 5%;
+    }
+    
+    .brand-story-image img {
+        max-width: 100%;
+    }
+    
+    .brand-story .brand-story-logo {
+        margin: 0;
+        margin-top: 60px;
+    }
+    
+    .brand-story-bg {
+        min-height: 440px;
+        max-height: 440px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .brand-story .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .brand-story-desc p {
+        width: 65%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    .brand-story.mcdonalds .brand-story-desc p {
+        width: 75%;
+    }
+    
+    .brand-story-button {
+        margin-bottom: 60px;
+    }
+    
+    .brand-story-image {
+        width: 60%;
+        float: right;
+        position: absolute;
+        padding-top: 50px;
+        right: 10%;
+    }
+    
+    .brand-story.hardie .brand-story-image {
+        left: 10%;
+    }
+    
+    .brand-story-image img {
+        max-width: 700px;
+        float: right;
+    }
+    
+    .brand-story.hardie .brand-story-image img {
+        float: left;
+    }
+    
+    .brand-story.corvette .brand-story-image {
+        padding-top: 160px;
+    }
+    
+    .brand-story.mcdonalds .brand-story-image {
+        padding-top: 60px;
+    }
+    
+    .brand-story-bg {
+        min-height: 420px;
+        max-height: 420px;
+    }
+}
+
+/* Company Stats */
+
 .company-stat-section {
     background: #fff;
 }
@@ -698,6 +1140,8 @@ hr.section-title-hr {
     background-image: url(../img/icons/time.jpg);
 }
 
+/* Company Clients Section */
+
 .client-list-section {
     padding: 0px;
     background-size: cover;
@@ -743,6 +1187,13 @@ hr.section-title-hr {
 }
 
 @media (min-width: 500px) {
+    .company-stat-list {
+        list-style: none;
+        padding-left: 10%;
+        width: 75%;
+        margin: 0 auto;
+    }
+    
     .client-list-section .client-list {
         width: 49.5%;
         display: inline-block;
@@ -762,7 +1213,7 @@ hr.section-title-hr {
     .company-stat-list {
         list-style: none;
         padding-left: 13%;
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
     }
     
@@ -804,6 +1255,107 @@ hr.section-title-hr {
     }
 }
 
+@media (min-width: 768px) {
+    .company-stat-list {
+        list-style: none;
+        padding-left: 7.5%;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .company-stat-list li:first-of-type {
+        margin-top: 60px;
+    }
+    
+    .company-stat-list li:last-of-type {
+        margin-bottom: 70px;
+    }
+    
+    .client-list-section .client-list:first-of-type {
+        padding-left: 20%;
+    }
+    
+    .client-list-section .client-list:last-of-type {
+        padding-right: 20%;
+    }
+}
+
+@media (min-width: 850px) {
+    .company-stat-list {
+        list-style: none;
+        padding-left: 6.5%;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .company-stat-list li:first-of-type {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .company-stat-list {
+        padding-left: 4%;
+        width: 75%;
+    }
+    
+    .company-stat-section, .client-list-section {
+        height: 560px;
+    }
+    
+    .client-list-section .client-title {
+        padding-top: 72px;
+    }
+    
+    .client-list-section .client-list:first-of-type {
+        margin-top: 45px;
+        margin-bottom: 60px;
+    }
+
+    .client-list-section .client-list:last-of-type {
+        margin-bottom: 60px;
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 1015px) {
+    .company-stat-section, .client-list-section {
+        height: 510px;
+    }
+    
+    .client-list-section .client-title {
+        padding-top: 72px;
+    }
+    
+    .client-list-section .client-list:first-of-type {
+        margin-top: 25px;
+        margin-bottom: 45px;
+    }
+
+    .client-list-section .client-list:last-of-type {
+        margin-top: 25px;
+        margin-bottom: 45px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .company-stat-list li:first-of-type {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1560px) {
+    .company-stat-section, .client-list-section {
+        height: 500px;
+    }
+    
+    .company-stat-list li:first-of-type {
+        margin-top: 15%;
+    }
+}
+
+/* Testimonial Section */
+
 .testimonial-container {
     background: #f1eafc;
 }
@@ -836,6 +1388,7 @@ hr.section-title-hr {
 
 #testimonial-carousel .carousel-control {
     width: 20px;
+    height: 20px;
     opacity: 1;
     background-image: none;
     position: absolute;
@@ -843,14 +1396,14 @@ hr.section-title-hr {
 }
 
 #testimonial-carousel .carousel-control.left {
-    margin-left: 80px;
+    margin-left: 25px;
 }
 
 #testimonial-carousel .carousel-control.right {
-    margin-right: 80px;
+    margin-right: 25px;
 }
 
-#tesimonial-carousel .carousel-control img {
+#testimonial-carousel .carousel-control img {
     max-width: 100%;
 }
 
@@ -896,6 +1449,15 @@ hr.section-title-hr {
         width: 60%;
     }
 }
+
+@media (min-width: 992px) {
+    #testimonial-carousel .carousel-inner {
+        min-height: 330px;
+        max-height: 330px;
+    }
+}
+
+/* Blog Section */
 
 .blog-container {
     background: #623c91;
@@ -996,8 +1558,59 @@ h6.blog-post-title-heading {
     }
 }
 
+@media (min-width: 768px) {
+    .blog-image {
+        width: 100%;
+    }
+    
+    .blog-post-content {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .blog-item {
+        margin-top: 30px;
+    }
+    
+    .blog-container .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 850px) {
+    .blog-image {
+        width: 100%;
+    }
+    
+    .blog-post-content {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .blog-item {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .blog-container .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blog-container .container {
+        width: 1170px;
+    }
+}
+
+/* Contact Section */
+
 .contact-section {
     background: #fff;
+    z-index: -2;
 }
 
 .contact-section .contact-form-title h3 {
@@ -1082,6 +1695,7 @@ h2.contact-title-heading {
     margin-left: 65px;
     color: #1d1f20;
     font-size: 14px;
+    width: 250px;
 }
 
 .contact-info .address, .contact-info .phone {
@@ -1099,7 +1713,6 @@ h2.contact-title-heading {
     text-align: right;
     width: 100%;
     position: absolute;
-    background: red;
     margin-left: 8%;
 }
 
@@ -1110,7 +1723,7 @@ h2.contact-title-heading {
 }
 
 .contact-section .purple-banner:after {
-    background: inherit;
+    background: #623c91;
     content: '';
     display: inline-block;
     height: 120px;
@@ -1120,7 +1733,7 @@ h2.contact-title-heading {
     right: 0;
     transform: skewX(-35deg);
     transform-origin: 100%;
-    z-index: -1;
+    z-index: 0;
     margin-left: -45px;
 }
 
@@ -1133,6 +1746,18 @@ h2.contact-title-heading {
 @media (min-width: 700px) {
     #contact-form {
         width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact-form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact-form {
+        width: 380px;
     }
 }
 
