@@ -46,27 +46,27 @@ $(window).load(function(){
         'stroke-dashoffset': len1
       }).animate({
         'stroke-dashoffset': 0
-      }, 2500, mina.easeinout);
+      }, 2000, mina.easeinout);
 
     arc2.attr({
         'stroke-dasharray': len2,
         'stroke-dashoffset': len2
       }).animate({
         'stroke-dashoffset': 0
-      }, 2500, mina.easeinout);
+      }, 2000, mina.easeinout);
 
 
 
-    arc1.animate({ d: "M39.198,64c0-13.709,11.093-24.802,24.802-24.802 M88.803,64c0-13.709-11.094-24.802-24.803-24.802" }, 2500, mina.easeinout);
-    arc2.animate({ d: "M88.803,64c0,13.708-11.094,24.802-24.803,24.802 M39.198,64c0,13.709,11.093,24.803,24.802,24.803" }, 2500, mina.easeinout);
+    arc1.animate({ d: "M39.198,64c0-13.709,11.093-24.802,24.802-24.802 M88.803,64c0-13.709-11.094-24.802-24.803-24.802" }, 2000, mina.easeinout);
+    arc2.animate({ d: "M88.803,64c0,13.708-11.094,24.802-24.803,24.802 M39.198,64c0,13.709,11.093,24.803,24.802,24.803" }, 2000, mina.easeinout);
 
     setTimeout(function () {
        circle.animate({r: 44}, 500, mina.bounce)
-    }, 1250);
+    }, 750);
     
     setTimeout(function(){
         $("body").removeClass("loading");
         $(".icon").hide().addClass("hidden");
-        $(".non-loader-wrapper").hide().removeClass("hidden").fadeIn("500");
-    }, 1250);
+        $(".non-loader-wrapper").hide().removeClass("hidden").fadeIn("750");
+    }, 750);
 })
