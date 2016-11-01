@@ -16,53 +16,31 @@
         <link rel="stylesheet" href="public/css/rbp-mobfirst.css"/>
     </head>
     <body>
-        <div class="navigation">
-            <div class="hero pull-left">
-                <div class="hero-image">
-                    <img src="public/img/common/rbpSmLogoFull.png" alt="RBP Logo Full (Small)"/>
+        <div class="icon hidden">
+            <svg class="loader rotate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+            <circle id="circle" fill="#552a89" stroke="#beb3d4" stroke-width="3" stroke-miterlimit="10" cx="64" cy="64" r="32"/>
+            <path id="arc1" fill="none" stroke="#beb3d4" stroke-width="3" stroke-miterlimit="10" d="M18.864,64c0-24.949,20.188-45.136,45.136-45.136
+                 M109.137,64c0-24.948-20.188-45.135-45.137-45.135"/>
+            <path id="arc2" fill="none" stroke="#552a89" stroke-width="3" stroke-miterlimit="10" d="M109.136,64c0,24.949-20.188,45.136-45.136,45.136
+                 M18.864,64c0,24.948,20.188,45.137,45.136,45.137"/>
+            </svg>
+        </div>
+        <div class="non-loader-wrapper hidden">
+            <div class="navigation">
+                <div class="hero pull-left">
+                    <div class="hero-image">
+                        <img src="public/img/common/rbpSmLogoFull.png" alt="RBP Logo Full (Small)"/>
+                    </div>
                 </div>
-            </div>
-            <div class="mobile-nav hidden-md hidden-lg">
-                <a class="mobile-hamburger mobile-control pull-right">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <ul class="mobile-nav-ul closed">
-                    <a class="close-mobile-nav mobile-control">
-                        <i class="fa fa-close"></i>
+                <div class="mobile-nav hidden-md hidden-lg">
+                    <a class="mobile-hamburger mobile-control pull-right">
+                        <i class="fa fa-bars"></i>
                     </a>
-                    <li class="list-item">
-                        <a href="#" class="list-link">
-                            Home
+                    <ul class="mobile-nav-ul closed">
+                        <a class="close-mobile-nav mobile-control">
+                            <i class="fa fa-close"></i>
                         </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">
-                            Clients
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">
-                            What We Do
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="desktop-nav hidden-xs hidden-sm">
-                <div class="desktop-nav-rollout">
-                    <!-- when clicked rolls out nav -->
-                </div>
-                <div class="desktop-nav-wrapper">
-                    <ul class="desktop-nav-ul closed">
                         <li class="list-item">
                             <a href="#" class="list-link">
                                 Home
@@ -90,739 +68,773 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="page-body">
-            <!-- LANDING -->
-            <div class="landing">
-                <div class="landing-content">
-                    <div class="landing-main-bg">
-                        <div class="container no-pad">
-                            <div class="landing-logo">
-                                <img src="public/img/common/rbpLgLogo.png"/>
-                            </div>
-                            <div class="landing-desc">
-                                <p class="thin">
-                                    As pioneers in emotional research, we uncover consumer motivation at the deepest emotional level, giving our clients insight, direction and inspiration in order to solve their most difficult problems.
-                                </p>
-                            </div>
-                            <div class="landing-buttons">
-                                <a href="#" class="button learn-more light">Learn More</a>
-                                <a href="#" class="button our-clients light hov fill fill-button">Our Clients</a>
-                            </div>
-                        </div>
+                <div class="desktop-nav hidden-xs hidden-sm">
+                    <div class="desktop-nav-rollout">
+                        <!-- when clicked rolls out nav -->
                     </div>
-                </div>
-            </div>
-            <div class="landing-scroll-bg">
-                <!-- Scrolling Background Logosw -->
-            </div>
-            <div class="clearfix"></div>
-            <div class="container-fluid no-pad">
-                <div class="what-we-do-container primary text-center">
-                    <div class="container no-pad">
-                        <div class="section-title-container">
-                            <h2 class="section-title uppercase">
-                                What We Do
-                            </h2>
-                        </div>
-                        <hr class="section-title-hr"/>
-                        <div class="section-desc">
-                            <div class="what-we-do">
-                                <p class="thin">
-                                    We help our clients develop powerful strategies based on discovering consumers' emotional needs. This knowledge reveals the single most important aspect of a brand-
-                                    <br/> 
-                                    <span class="strong">the promise it holds out to consumers.</span>
-                                    <br/><br/>
-                                    <span class="explore">Click on one of the services below to learn more.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="services-container">
-                    <div class="three-col">
-                        <div class="service-item col-xs-12 col-sm-4 col-md-4 research no-pad">
-                            <div class="service-content">
-                                <div class="service-number">
-                                    <span class="number">1</span>
-                                </div>
-                                <div class="service-title">
-                                    <h2 class="service-title-heading uppercase">Right Brain<br/>Research</h2>
-                                </div>
-                                <hr class="service-hr"/>
-                                <div class="service-desc">
-                                    <p class="thin">
-                                        We are the pioneers of consumer psychology and emotional research. Our powerful and unique method uncovers emotional motivation at the deepest level.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item col-xs-12 col-sm-4 col-md-4 segmentation no-pad">
-                            <div class="service-content">
-                                <div class="service-number">
-                                    <span class="number">2</span>
-                                </div>
-                                <div class="service-title">
-                                    <h2 class="service-title-heading uppercase">Emotional<br/>Segmentation</h2>
-                                </div>
-                                <hr class="service-hr"/>
-                                <div class="service-desc">
-                                    <p class="thin">
-                                        We segment consumers based on the emotional motivations driving purchase behavior. Use this data to develop a messaging strategy for key touch points in your customers' journeys.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item col-xs-12 col-sm-4 col-md-4 strategy no-pad">
-                            <div class="service-content">
-                                <div class="service-number">
-                                    <span class="number">3</span>
-                                </div>
-                                <div class="service-title">
-                                    <h2 class="service-title-heading uppercase">Strategy<br/>Workshop</h2>
-                                </div>
-                                <hr class="service-hr"/>
-                                <div class="service-desc">
-                                    <p class="thin">
-                                        We direct strategy workshops using a whole brain approach fostering cross- functional collaboration and unleashing your organization's untapped creativity.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="brand-stories-title-container secondary text-center">
-                    <div class="container no-pad">
-                        <div class="section-title-container">
-                            <h2 class="section-title uppercase">
-                                Brand Stories
-                            </h2>
-                        </div>
-                        <hr class="section-title-hr"/>
-                        <div class="section-desc">
-                            <div class="what-we-do">
-                                <p class="light">
-                                    We are proud to share these brand stories. They demonstrate the pivotal role our Right Brain approach has played in guiding our clients' market changing strategic decisions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="brand-stories-container">
-                    <div class="brand-story brand-story-bg mcdonalds col-xs-12 col-sm-4 col-md-12">
-                        <div class="container no-pad">
-                            <div class="brand-story-content">
-                                <div class="brand-story-logo">
-                                    <img src="public/img/brand-stories/logos/mcDonalds.png"/>
-                                </div>
-                                <div class="brand-story-title">
-                                    <h2 class="brand-story-title-heading uppercase">
-                                        McDonald's
-                                    </h2>
-                                </div>
-                                <div class="brand-story-desc">
-                                    <p class="thin">
-                                        "I'll have a #4 with a diet coke please."
-                                        <br/>
-                                        Learn how the combo meal was born changing how 100 million Americans order food every day.
-                                    </p>
-                                </div>
-                                <div class="brand-story-button mcdonalds">
-                                    <a href="#" class="button our-clients light hov fill fill-button">Read More</a>
-                                </div>
-                            </div>
-                            <div class="pull-right brand-story-image hidden-sm hidden-xs">
-                                <img src="public/img/brand-stories/large-img/mcDonalds.png" alt="McDonalds Brand Story Image"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="brand-story brand-story-bg hardie col-xs-12 col-sm-4 col-md-12">
-                        <div class="container no-pad">
-                            <div class="brand-story-content">
-                                <div class="brand-story-logo">
-                                    <img src="public/img/brand-stories/logos/hardie.png"/>
-                                </div>
-                                <div class="brand-story-title">
-                                    <h2 class="brand-story-title-heading uppercase">
-                                        James Hardie
-                                    </h2>
-                                </div>
-                                <div class="brand-story-desc">
-                                    <p class="thin">
-                                        Turning a house into a home.
-                                        <br/>
-                                        How the Right Brain approach helped James Hardie's products conquer 20% of market share.
-                                        <br class="hidden-xs hidden-md hidden-lg"/>
-                                    </p>
-                                </div>
-                                <div class="brand-story-button hardie">
-                                    <a href="#" class="button our-clients light hov fill fill-button">Read More</a>
-                                </div>
-                            </div>
-                            <div class="pull-right brand-story-image hidden-sm hidden-xs">
-                                <img src="public/img/brand-stories/large-img/hardie.png" alt="James Hardie Brand Story Image"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="brand-story brand-story-bg corvette col-xs-12 col-sm-4 col-md-12">
-                        <div class="container no-pad">
-                            <div class="brand-story-content">
-                                <div class="brand-story-logo">
-                                    <img src="public/img/brand-stories/logos/corvette.png"/>
-                                </div>
-                                <div class="brand-story-title">
-                                    <h2 class="brand-story-title-heading uppercase">
-                                        Corvette
-                                    </h2>
-                                </div>
-                                <div class="brand-story-desc">
-                                    <p class="thin">
-                                        Corvette - the come back kid.
-                                        <br/>
-                                        Learn how we helped GM resurrect the Corvette by keeping the brand's promise.
-                                        <br class="hidden-xs hidden-md hidden-lg"/>
-                                    </p>
-                                </div>
-                                <div class="brand-story-button corvette">
-                                    <a href="#" class="button our-clients light hov fill fill-button">Read More</a>
-                                </div>
-                            </div>
-                            <div class="pull-right brand-story-image hidden-sm hidden-xs">
-                                <img src="public/img/brand-stories/large-img/corvette.png" alt="Corvette Brand Story Image"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="our-clients-container secondary">
-                    <div class="our-clients-row row">
-                        <div class="company-stat-section col-xs-12 col-xm-12 col-md-6 col-lg-6">
-                            <div class="company-stats">
-                                <ul class="company-stat-list">
-                                    <li class="stat one">
-                                        <h4 class="stat-title uppercase one">
-                                            <span class="bold">600+</span> corporate clients
-                                        </h4>
-                                        <p class="stat-desc light">
-                                            We've worked with over 600 of the world's largest corporations and organizations. From Fortune 500 companies to Mom &amp; Pop shops, we've seen it all.
-                                        </p>
-                                    </li>
-                                    <li class="stat two">
-                                        <h4 class="stat-title uppercase two">
-                                            Work in over 
-                                            <span class="bold">225</span> product &amp; service categories
-                                        </h4>
-                                        <p class="stat-desc light">
-                                            We've worked with over 600 of the world's largest corporations and organizations. From Fortune 500 companies to Mom &amp; Pop shops, we've seen it all.
-                                        </p>
-                                    </li>
-                                    <li class="stat three">
-                                        <h4 class="stat-title uppercase three">
-                                            Our clients include
-                                            <span class="bold">22 of the top 40</span> advertisers
-                                        </h4>
-                                        <p class="stat-desc light">
-                                            We've worked with over 600 of the world's largest corporations and organizations. From Fortune 500 companies to Mom &amp; Pop shops, we've seen it all.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="client-list-section col-xs-12 col-sm-12 col-md-6 col-g-6">
-                            <div class="client-title uppercase">
-                                Our Clients
-                            </div>
-                            <ul class="client-list left">
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                            </ul>
-                            <ul class="client-list right">
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                                <li class="client">
-                                </li>
-                            </ul>
-                            <div class="client-list-button">
-                                <a class="button our-clients light hov fill fill-alt fill-button uppercase" data-toggle="modal" data-target="#clientModal">See More</a>
-                            </div>
-                        </div>
-                        <!-- CLIENT LIST MODAL -->
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="clientModal">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header text-center">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title our-clients-title uppercase text-center light" id="myModalLabel">Our Clients</h4>
-                              </div>
-                              <div class="row">
-                                <div class="client-modal-desc text-center">
-                                    <p class="sm-text thin">
-                                        We've worked with some of the most storied brands in the world. Over <span class="light">600</span> in all, spanning <span class="light">225+</span> product/service categories. If you have any questions please <a href="#">contact us</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 text-center light">
-                                    <ul class="no-list modal-client-list left">
-                                        <li class="client">
-                                            Abbott Labs
-                                        </li>
-                                        <li class="client">
-                                            American Express
-                                        </li>
-                                        <li class="client">
-                                            Amgen
-                                        </li>
-                                        <li class="client">
-                                            AT&amp;T
-                                        </li>
-                                        <li class="client">
-                                            Boundary Bend
-                                        </li>
-                                        <li class="client">
-                                            Bristol Myers-Squibb
-                                        </li>
-                                        <li class="client">
-                                            Cadillac
-                                        </li>
-                                        <li class="client">
-                                            Chrysler
-                                        </li>
-                                        <li class="client">
-                                            Clorox
-                                        </li>
-                                        <li class="client">
-                                            Coca-Cola
-                                        </li>
-                                        <li class="client">
-                                            Corvette
-                                        </li>
-                                        <li class="client">
-                                            Coty
-                                        </li>
-                                        <li class="client">
-                                            Dodge
-                                        </li>
-                                        <li class="client">
-                                            Ensure
-                                        </li>
-                                        <li class="client">
-                                            Excedrin
-                                        </li>
-                                        <li class="client">
-                                            FedEx
-                                        </li>
-                                        <li class="client">
-                                            Goodyear
-                                        </li>
-                                        <li class="client">
-                                            Harrah's
-                                        </li>
-                                        <li class="client">
-                                            Hughes Aerospace
-                                        </li>
-                                        <li class="client">
-                                            Humira&#174;
-                                        </li>
-                                        <li class="client">
-                                            James Hardie
-                                        </li>
-                                        <li class="client">
-                                            Jared's Galleria of Fine Jewelry
-                                        </li>
-                                        <li class="client">
-                                            Jeep
-                                        </li>
-                                        <li class="client">
-                                            Jovan Musk
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 text-center light">
-                                    <ul class="no-list modal-client-list right">
-                                        <li class="client">
-                                            Kaletra&#174;
-                                        </li>
-                                        <li class="client">
-                                            Kay Jewelers
-                                        </li>
-                                        <li class="client">
-                                            Key Bank
-                                        </li>
-                                        <li class="client">
-                                            Kraft
-                                        </li>
-                                        <li class="client">
-                                            Maybelline
-                                        </li>
-                                        <li class="client">
-                                            McDonald's
-                                        </li>
-                                        <li class="client">
-                                            Merck
-                                        </li>
-                                        <li class="client">
-                                            Nationwide
-                                        </li>
-                                        <li class="client">
-                                            Nissan
-                                        </li>
-                                        <li class="client">
-                                            Post Cereal
-                                        </li>
-                                        <li class="client">
-                                            Powerball
-                                        </li>
-                                        <li class="client">
-                                            Purina Mills
-                                        </li>
-                                        <li class="client">
-                                            Quaker Oats
-                                        </li>
-                                        <li class="client">
-                                            Saturn
-                                        </li>
-                                        <li class="client">
-                                            SBC
-                                        </li>
-                                        <li class="client">
-                                            Scotts/Miracle-Gro&#174;
-                                        </li>
-                                        <li class="client">
-                                            Sears
-                                        </li>
-                                        <li class="client">
-                                            Shire Pharmaceuticals
-                                        </li>
-                                        <li class="client">
-                                            Slim-Fast&#174;
-                                        </li>
-                                        <li class="client">
-                                            Sterling Jewelers
-                                        </li>
-                                        <li class="client">
-                                            Toyota
-                                        </li>
-                                        <li class="client">
-                                            Viking
-                                        </li>
-                                        <li class="client">
-                                            Walmart
-                                        </li>
-                                        <li class="client">
-                                            Wells Fargo
-                                        </li>
-                                    </ul>
-                                </div>
-                                  <div class="client-list-button close-button text-center">
-                                        <a href="" class="read-more-button uppercase sm-text hov fill fill-alt fill-button" data-dismiss="modal" aria-label="Close">Close</a>
-                                    </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-container">
-                    <div class="container text-center">
-                        <div class="col-xs-12 no-pad">
-                            <div class="testimonial-title">
-                                <h2 class="testimonial-title-heading uppercase">
-                                    Testimonials
-                                </h2>
-                            </div>
-                            <div class="carousel slide" id="testimonial-carousel" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#testimonial-carousel" data-slide-to="1"></li>
-                                    <li data-target="#testimonial-carousel" data-slide-to="2"></li>
-                                    <li data-target="#testimonial-carousel" data-slide-to="3"></li>
-                                    <li data-target="#testimonial-carousel" data-slide-to="4"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div class="testimonial-desc">
-                                            <p class="light">
-                                                "At Hughes Aerospace Right Brain Research <span class="bold">always</span> showed us that even the most<br class="hidden-xs hidden-sm"> complex competition, reviewed by the most sophisticated people, often boils down to decisions made about <span class="bold">simple emotional constructs.</span>"
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-source">
-                                            <div class="logo-desc">
-                                                <div class="testimonial-logo">
-                                                    <img src="public/img/testimonials/hughes.jpg" alt="Hughes Aerospace"/>
-                                                </div>
-                                                <div class="testimonial-source">
-                                                    <p class="light">
-                                                        <span class="company-name bold">
-                                                            Hughes Aerospace
-                                                        </span>
-                                                        <br/>
-                                                        Tom Wittenschlaeger, CEO<span class="hidden-xs">, Raptor Network Tech Inc.</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-desc">
-                                            <p class="light">
-                                                "The Right Brain Research which your firm performed for us was <span class="bold">years</span><br class="hidden-xs hidden-sm"> ahead of its time. The market is evolving into it <span class="bold">beautifully</span>.<br class="hidden-xs hidden-sm"> Great work, great job!!"
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-source">
-                                            <div class="logo-desc">
-                                                <div class="testimonial-logo">
-                                                    <img src="public/img/testimonials/jHardie.jpg" alt="James hardie"/>
-                                                </div>
-                                                <div class="testimonial-source">
-                                                    <p class="light">
-                                                        <span class="company-name bold">
-                                                            James Hardie
-                                                        </span>
-                                                        <br/>
-                                                        John Dybsky, Marketing Director
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-desc">
-                                            <p class="light">
-                                                "We searched for a method to identify the emotional side of consumer behavior. <br class="hidden-xs hidden-sm">When we found The Right Brain People, we discovered a <span class="bold">whole new way</span><br class="hidden-xs hidden-sm"> of doing market research and <span class="bold">understanding our consumer</span>."
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-source">
-                                            <div class="logo-desc">
-                                                <div class="testimonial-logo">
-                                                    <img src="public/img/testimonials/maybelline.jpg" alt="Maybelline"/>
-                                                </div>
-                                                <div class="testimonial-source">
-                                                    <p class="light">
-                                                        <span class="company-name bold">
-                                                            Maybelline
-                                                        </span>
-                                                        <br/>
-                                                        David Brittain, President
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-desc">
-                                            <p class="light">
-                                                I was very impressed by the <span class="bold">breadth of topics</span> that could be addressed in the scope of one project. The Right Brain technique appears to offer <span class="bold">possibilities for understanding</span> the consumer in ways that conventional research approaches might ignore or overlook.
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-source">
-                                            <div class="logo-desc">
-                                                <div class="testimonial-logo">
-                                                    <img src="public/img/testimonials/mcd.jpg" alt="McDonald's"/>
-                                                </div>
-                                                <div class="testimonial-source">
-                                                    <p class="light">
-                                                        <span class="company-name bold">
-                                                            McDonald's
-                                                        </span>
-                                                        <br/>
-                                                        Don Demski, Research Director
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-desc">
-                                            <p class="light">
-                                                "Right Brain Research is the <span class="bold">keystone of all</span> customer-focused marketing.<br class="hidden-xs hidden-sm"> The Right Brain People is an <span class="bold">essential ingredient</span> for successful marketing in this<br class="hidden-xs hidden-sm"> highly competitive, fast changing era."
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-source">
-                                            <div class="logo-desc">
-                                                <div class="testimonial-logo">
-                                                    <img src="public/img/testimonials/mdm.jpg" alt="MDM"/>
-                                                </div>
-                                                <div class="testimonial-source">
-                                                    <p class="light">
-                                                        <span class="company-name bold">
-                                                            MDM Inc.
-                                                        </span>
-                                                        <br/>
-                                                        Tom Marnell, President
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="left carousel-control hidden-xs" href="#testimonial-carousel" role="button" data-slide="prev">
-                                    <span class="left-arrow" aria-hidden="true">
-                                        <img src="public/img/common/arrow.jpg">
-                                    </span>
-                                    <span class="sr-only">Previous</span>
+                    <div class="desktop-nav-wrapper">
+                        <ul class="desktop-nav-ul closed">
+                            <li class="list-item">
+                                <a href="#" class="list-link">
+                                    Home
                                 </a>
-                                <a class="right carousel-control hidden-xs" href="#testimonial-carousel" role="button" data-slide="next">
-                                    <span class="left-arrow" aria-hidden="true">
-                                        <img src="public/img/common/arrow.jpg">
-                                    </span>
-                                    <span class="sr-only">Previous</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">
+                                    Clients
                                 </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">
+                                    What We Do
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-body">
+                <!-- LANDING -->
+                <div class="landing">
+                    <div class="landing-content">
+                        <div class="landing-main-bg">
+                            <div class="container no-pad">
+                                <div class="landing-logo">
+                                    <img src="public/img/common/rbpLgLogo.png"/>
+                                </div>
+                                <div class="landing-desc">
+                                    <p class="thin">
+                                        As pioneers in emotional research, we uncover consumer motivation at the deepest emotional level, giving our clients insight, direction and inspiration in order to solve their most difficult problems.
+                                    </p>
+                                </div>
+                                <div class="landing-buttons">
+                                    <a href="#" class="button learn-more light">Learn More</a>
+                                    <a href="#" class="button our-clients light hov fill fill-button">Our Clients</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="blog-container primary">
-                        <div class="container-fluid">
+                </div>
+                <div class="landing-scroll-bg">
+                    <!-- Scrolling Background Logosw -->
+                </div>
+                <div class="clearfix"></div>
+                <div class="container-fluid no-pad">
+                    <div class="what-we-do-container primary text-center">
+                        <div class="container no-pad">
                             <div class="section-title-container">
                                 <h2 class="section-title uppercase">
-                                    From The Blog
+                                    What We Do
                                 </h2>
                             </div>
                             <hr class="section-title-hr"/>
-                            <div class="section-content">
-                                <div class="from-the-blog-content container">
-                                    <div class="blog-item col-xs-12 col-sm-4 col-md-4">
-                                        <div class="blog-image">
-                                            <img src="public/img/blog/bp-1.jpg" alt="blog-image"/>
-                                        </div>
-                                        <div class="blog-post-content">
-                                            <div class="blog-post-title uppercase">
-                                                <h6 class="blog-post-title-heading">
-                                                    Blog Post Title    
-                                                </h6>
-                                            </div>
-                                            <div class="blog-post-date">
-                                                <p class="thin">
-                                                    September 10, 2016
-                                                </p>
-                                            </div>
-                                            <div class="blog-post-snippet">
-                                                <p class="thin">
-                                                    This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
-                                                </p>
-                                                <span class="read-more">
-                                                    <a href="#" class="read-more-link">read more &rarr;</a>
-                                                </span>
-                                            </div>
-                                        </div>
+                            <div class="section-desc">
+                                <div class="what-we-do">
+                                    <p class="thin">
+                                        We help our clients develop powerful strategies based on discovering consumers' emotional needs. This knowledge reveals the single most important aspect of a brand-
+                                        <br/> 
+                                        <span class="strong">the promise it holds out to consumers.</span>
+                                        <br/><br/>
+                                        <span class="explore">Click on one of the services below to learn more.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="services-container">
+                        <div class="three-col">
+                            <div class="service-item col-xs-12 col-sm-4 col-md-4 research no-pad">
+                                <div class="service-content">
+                                    <div class="service-number">
+                                        <span class="number">1</span>
                                     </div>
-                                    <div class="blog-item col-xs-12 col-sm-4 col-md-4">
-                                        <div class="blog-image">
-                                            <img src="public/img/blog/bp-2.jpg" alt="blog-image"/>
-                                        </div>
-                                        <div class="blog-post-content">
-                                            <div class="blog-post-title uppercase">
-                                                <h6 class="blog-post-title-heading">Blog Post Title</h6>
-                                            </div>
-                                            <div class="blog-post-date">
-                                                <p class="thin">
-                                                    September 10, 2016
-                                                </p>
-                                            </div>
-                                            <div class="blog-post-snippet">
-                                                <p class="thin">
-                                                    This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
-                                                </p>
-                                                <span class="read-more">
-                                                    <a href="#" class="read-more-link">read more &rarr;</a>
-                                                </span>
-                                            </div>
-                                        </div>
+                                    <div class="service-title">
+                                        <h2 class="service-title-heading uppercase">Right Brain<br/>Research</h2>
                                     </div>
-                                    <div class="blog-item col-xs-12 col-sm-4 col-md-4">
-                                        <div class="blog-image">
-                                            <img src="public/img/blog/bp-3.jpg" alt="blog-image"/>
-                                        </div>
-                                        <div class="blog-post-content">
-                                            <div class="blog-post-title uppercase">
-                                                <h6 class="blog-post-title-heading">Blog Post Title</h6>
-                                            </div>
-                                            <div class="blog-post-date">
-                                                <p class="thin">
-                                                    September 10, 2016
-                                                </p>
-                                            </div>
-                                            <div class="blog-post-snippet">
-                                                <p class="thin">
-                                                    This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
-                                                </p>
-                                                <span class="read-more">
-                                                    <a href="#" class="read-more-link">read more &rarr;</a>
-                                                </span>
-                                            </div>
-                                        </div>
+                                    <hr class="service-hr"/>
+                                    <div class="service-desc">
+                                        <p class="thin">
+                                            We are the pioneers of consumer psychology and emotional research. Our powerful and unique method uncovers emotional motivation at the deepest level.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item col-xs-12 col-sm-4 col-md-4 segmentation no-pad">
+                                <div class="service-content">
+                                    <div class="service-number">
+                                        <span class="number">2</span>
+                                    </div>
+                                    <div class="service-title">
+                                        <h2 class="service-title-heading uppercase">Emotional<br/>Segmentation</h2>
+                                    </div>
+                                    <hr class="service-hr"/>
+                                    <div class="service-desc">
+                                        <p class="thin">
+                                            We segment consumers based on the emotional motivations driving purchase behavior. Use this data to develop a messaging strategy for key touch points in your customers' journeys.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item col-xs-12 col-sm-4 col-md-4 strategy no-pad">
+                                <div class="service-content">
+                                    <div class="service-number">
+                                        <span class="number">3</span>
+                                    </div>
+                                    <div class="service-title">
+                                        <h2 class="service-title-heading uppercase">Strategy<br/>Workshop</h2>
+                                    </div>
+                                    <hr class="service-hr"/>
+                                    <div class="service-desc">
+                                        <p class="thin">
+                                            We direct strategy workshops using a whole brain approach fostering cross- functional collaboration and unleashing your organization's untapped creativity.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contact-section">
-                        <div class="row no-pad">
-                            <div class="contact-form-section col-xs-12 col-sm-6 col-md-6">
-                                <div class="contact-title text-center">
-                                    <h2 class="contact-title-heading uppercase">
-                                        Send Us A Message
+                    <div class="clearfix"></div>
+                    <div class="brand-stories-title-container secondary text-center">
+                        <div class="container no-pad">
+                            <div class="section-title-container">
+                                <h2 class="section-title uppercase">
+                                    Brand Stories
+                                </h2>
+                            </div>
+                            <hr class="section-title-hr"/>
+                            <div class="section-desc">
+                                <div class="what-we-do">
+                                    <p class="light">
+                                        We are proud to share these brand stories. They demonstrate the pivotal role our Right Brain approach has played in guiding our clients' market changing strategic decisions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-stories-container">
+                        <div class="brand-story brand-story-bg mcdonalds col-xs-12 col-sm-4 col-md-12">
+                            <div class="container no-pad">
+                                <div class="brand-story-content">
+                                    <div class="brand-story-logo">
+                                        <img src="public/img/brand-stories/logos/mcDonalds.png"/>
+                                    </div>
+                                    <div class="brand-story-title">
+                                        <h2 class="brand-story-title-heading uppercase">
+                                            McDonald's
+                                        </h2>
+                                    </div>
+                                    <div class="brand-story-desc">
+                                        <p class="thin">
+                                            "I'll have a #4 with a diet coke please."
+                                            <br/>
+                                            Learn how the combo meal was born changing how 100 million Americans order food every day.
+                                        </p>
+                                    </div>
+                                    <div class="brand-story-button mcdonalds">
+                                        <a href="#" class="button our-clients light hov fill fill-button">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="pull-right brand-story-image hidden-sm hidden-xs">
+                                    <img src="public/img/brand-stories/large-img/mcDonalds.png" alt="McDonalds Brand Story Image"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-story brand-story-bg hardie col-xs-12 col-sm-4 col-md-12">
+                            <div class="container no-pad">
+                                <div class="brand-story-content">
+                                    <div class="brand-story-logo">
+                                        <img src="public/img/brand-stories/logos/hardie.png"/>
+                                    </div>
+                                    <div class="brand-story-title">
+                                        <h2 class="brand-story-title-heading uppercase">
+                                            James Hardie
+                                        </h2>
+                                    </div>
+                                    <div class="brand-story-desc">
+                                        <p class="thin">
+                                            Turning a house into a home.
+                                            <br/>
+                                            How the Right Brain approach helped James Hardie's products conquer 20% of market share.
+                                            <br class="hidden-xs hidden-md hidden-lg"/>
+                                        </p>
+                                    </div>
+                                    <div class="brand-story-button hardie">
+                                        <a href="#" class="button our-clients light hov fill fill-button">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="pull-right brand-story-image hidden-sm hidden-xs">
+                                    <img src="public/img/brand-stories/large-img/hardie.png" alt="James Hardie Brand Story Image"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-story brand-story-bg corvette col-xs-12 col-sm-4 col-md-12">
+                            <div class="container no-pad">
+                                <div class="brand-story-content">
+                                    <div class="brand-story-logo">
+                                        <img src="public/img/brand-stories/logos/corvette.png"/>
+                                    </div>
+                                    <div class="brand-story-title">
+                                        <h2 class="brand-story-title-heading uppercase">
+                                            Corvette
+                                        </h2>
+                                    </div>
+                                    <div class="brand-story-desc">
+                                        <p class="thin">
+                                            Corvette - the come back kid.
+                                            <br/>
+                                            Learn how we helped GM resurrect the Corvette by keeping the brand's promise.
+                                            <br class="hidden-xs hidden-md hidden-lg"/>
+                                        </p>
+                                    </div>
+                                    <div class="brand-story-button corvette">
+                                        <a href="#" class="button our-clients light hov fill fill-button">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="pull-right brand-story-image hidden-sm hidden-xs">
+                                    <img src="public/img/brand-stories/large-img/corvette.png" alt="Corvette Brand Story Image"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="our-clients-container secondary">
+                        <div class="our-clients-row row">
+                            <div class="company-stat-section col-xs-12 col-xm-12 col-md-6 col-lg-6">
+                                <div class="company-stats">
+                                    <ul class="company-stat-list">
+                                        <li class="stat one">
+                                            <h4 class="stat-title uppercase one">
+                                                <span class="bold">600+</span> corporate clients
+                                            </h4>
+                                            <p class="stat-desc light">
+                                                We've worked with over 600 of the world's largest corporations and organizations. From Fortune 500 companies to Mom &amp; Pop shops, we've seen it all.
+                                            </p>
+                                        </li>
+                                        <li class="stat two">
+                                            <h4 class="stat-title uppercase two">
+                                                Work in over 
+                                                <span class="bold">225</span> product &amp; service categories
+                                            </h4>
+                                            <p class="stat-desc light">
+                                                We've worked with over 600 of the world's largest corporations and organizations. From Fortune 500 companies to Mom &amp; Pop shops, we've seen it all.
+                                            </p>
+                                        </li>
+                                        <li class="stat three">
+                                            <h4 class="stat-title uppercase three">
+                                                Our clients include
+                                                <span class="bold">22 of the top 40</span> advertisers
+                                            </h4>
+                                            <p class="stat-desc light">
+                                                We've worked with over 600 of the world's largest corporations and organizations. From Fortune 500 companies to Mom &amp; Pop shops, we've seen it all.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="client-list-section col-xs-12 col-sm-12 col-md-6 col-g-6">
+                                <div class="client-title uppercase">
+                                    Our Clients
+                                </div>
+                                <ul class="client-list left">
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                </ul>
+                                <ul class="client-list right">
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                    <li class="client">
+                                    </li>
+                                </ul>
+                                <div class="client-list-button">
+                                    <a class="button our-clients light hov fill fill-alt fill-button uppercase" data-toggle="modal" data-target="#clientModal">See More</a>
+                                </div>
+                            </div>
+                            <!-- CLIENT LIST MODAL -->
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="clientModal">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title our-clients-title uppercase text-center light" id="myModalLabel">Our Clients</h4>
+                                  </div>
+                                  <div class="row">
+                                    <div class="client-modal-desc text-center">
+                                        <p class="sm-text thin">
+                                            We've worked with some of the most storied brands in the world. Over <span class="light">600</span> in all, spanning <span class="light">225+</span> product/service categories. If you have any questions please <a href="#">contact us</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-center light">
+                                        <ul class="no-list modal-client-list left">
+                                            <li class="client">
+                                                Abbott Labs
+                                            </li>
+                                            <li class="client">
+                                                American Express
+                                            </li>
+                                            <li class="client">
+                                                Amgen
+                                            </li>
+                                            <li class="client">
+                                                AT&amp;T
+                                            </li>
+                                            <li class="client">
+                                                Boundary Bend
+                                            </li>
+                                            <li class="client">
+                                                Bristol Myers-Squibb
+                                            </li>
+                                            <li class="client">
+                                                Cadillac
+                                            </li>
+                                            <li class="client">
+                                                Chrysler
+                                            </li>
+                                            <li class="client">
+                                                Clorox
+                                            </li>
+                                            <li class="client">
+                                                Coca-Cola
+                                            </li>
+                                            <li class="client">
+                                                Corvette
+                                            </li>
+                                            <li class="client">
+                                                Coty
+                                            </li>
+                                            <li class="client">
+                                                Dodge
+                                            </li>
+                                            <li class="client">
+                                                Ensure
+                                            </li>
+                                            <li class="client">
+                                                Excedrin
+                                            </li>
+                                            <li class="client">
+                                                FedEx
+                                            </li>
+                                            <li class="client">
+                                                Goodyear
+                                            </li>
+                                            <li class="client">
+                                                Harrah's
+                                            </li>
+                                            <li class="client">
+                                                Hughes Aerospace
+                                            </li>
+                                            <li class="client">
+                                                Humira&#174;
+                                            </li>
+                                            <li class="client">
+                                                James Hardie
+                                            </li>
+                                            <li class="client">
+                                                Jared's Galleria of Fine Jewelry
+                                            </li>
+                                            <li class="client">
+                                                Jeep
+                                            </li>
+                                            <li class="client">
+                                                Jovan Musk
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-center light">
+                                        <ul class="no-list modal-client-list right">
+                                            <li class="client">
+                                                Kaletra&#174;
+                                            </li>
+                                            <li class="client">
+                                                Kay Jewelers
+                                            </li>
+                                            <li class="client">
+                                                Key Bank
+                                            </li>
+                                            <li class="client">
+                                                Kraft
+                                            </li>
+                                            <li class="client">
+                                                Maybelline
+                                            </li>
+                                            <li class="client">
+                                                McDonald's
+                                            </li>
+                                            <li class="client">
+                                                Merck
+                                            </li>
+                                            <li class="client">
+                                                Nationwide
+                                            </li>
+                                            <li class="client">
+                                                Nissan
+                                            </li>
+                                            <li class="client">
+                                                Post Cereal
+                                            </li>
+                                            <li class="client">
+                                                Powerball
+                                            </li>
+                                            <li class="client">
+                                                Purina Mills
+                                            </li>
+                                            <li class="client">
+                                                Quaker Oats
+                                            </li>
+                                            <li class="client">
+                                                Saturn
+                                            </li>
+                                            <li class="client">
+                                                SBC
+                                            </li>
+                                            <li class="client">
+                                                Scotts/Miracle-Gro&#174;
+                                            </li>
+                                            <li class="client">
+                                                Sears
+                                            </li>
+                                            <li class="client">
+                                                Shire Pharmaceuticals
+                                            </li>
+                                            <li class="client">
+                                                Slim-Fast&#174;
+                                            </li>
+                                            <li class="client">
+                                                Sterling Jewelers
+                                            </li>
+                                            <li class="client">
+                                                Toyota
+                                            </li>
+                                            <li class="client">
+                                                Viking
+                                            </li>
+                                            <li class="client">
+                                                Walmart
+                                            </li>
+                                            <li class="client">
+                                                Wells Fargo
+                                            </li>
+                                        </ul>
+                                    </div>
+                                      <div class="client-list-button close-button text-center">
+                                            <a href="" class="read-more-button uppercase sm-text hov fill fill-alt fill-button" data-dismiss="modal" aria-label="Close">Close</a>
+                                        </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="container text-center">
+                            <div class="col-xs-12 no-pad">
+                                <div class="testimonial-title">
+                                    <h2 class="testimonial-title-heading uppercase">
+                                        Testimonials
                                     </h2>
                                 </div>
-                                <div class="contact-form-wrapper">
-                                    <form class="contact-form" role="form" id="contact-form" action="https://formspree.io/anayar2@gmail.com">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" id="contact-name" placeholder="Full Name">
-                                            <input type="text" name="_gotcha" style="display:none;">
+                                <div class="carousel slide" id="testimonial-carousel" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                                        <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+                                        <li data-target="#testimonial-carousel" data-slide-to="3"></li>
+                                        <li data-target="#testimonial-carousel" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="testimonial-desc">
+                                                <p class="light">
+                                                    "At Hughes Aerospace Right Brain Research <span class="bold">always</span> showed us that even the most<br class="hidden-xs hidden-sm"> complex competition, reviewed by the most sophisticated people, often boils down to decisions made about <span class="bold">simple emotional constructs.</span>"
+                                                </p>
+                                            </div>
+                                            <div class="testimonial-source">
+                                                <div class="logo-desc">
+                                                    <div class="testimonial-logo">
+                                                        <img src="public/img/testimonials/hughes.jpg" alt="Hughes Aerospace"/>
+                                                    </div>
+                                                    <div class="testimonial-source">
+                                                        <p class="light">
+                                                            <span class="company-name bold">
+                                                                Hughes Aerospace
+                                                            </span>
+                                                            <br/>
+                                                            Tom Wittenschlaeger, CEO<span class="hidden-xs">, Raptor Network Tech Inc.</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" name="email" class="form-control" id="contact-email" placeholder="E-mail Address">
+                                        <div class="item">
+                                            <div class="testimonial-desc">
+                                                <p class="light">
+                                                    "The Right Brain Research which your firm performed for us was <span class="bold">years</span><br class="hidden-xs hidden-sm"> ahead of its time. The market is evolving into it <span class="bold">beautifully</span>.<br class="hidden-xs hidden-sm"> Great work, great job!!"
+                                                </p>
+                                            </div>
+                                            <div class="testimonial-source">
+                                                <div class="logo-desc">
+                                                    <div class="testimonial-logo">
+                                                        <img src="public/img/testimonials/jHardie.jpg" alt="James hardie"/>
+                                                    </div>
+                                                    <div class="testimonial-source">
+                                                        <p class="light">
+                                                            <span class="company-name bold">
+                                                                James Hardie
+                                                            </span>
+                                                            <br/>
+                                                            John Dybsky, Marketing Director
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <textarea type="text" class="feedback-input form-control" placeholder="Message" id="contact-comment" name="message"></textarea>
+                                        <div class="item">
+                                            <div class="testimonial-desc">
+                                                <p class="light">
+                                                    "We searched for a method to identify the emotional side of consumer behavior. <br class="hidden-xs hidden-sm">When we found The Right Brain People, we discovered a <span class="bold">whole new way</span><br class="hidden-xs hidden-sm"> of doing market research and <span class="bold">understanding our consumer</span>."
+                                                </p>
+                                            </div>
+                                            <div class="testimonial-source">
+                                                <div class="logo-desc">
+                                                    <div class="testimonial-logo">
+                                                        <img src="public/img/testimonials/maybelline.jpg" alt="Maybelline"/>
+                                                    </div>
+                                                    <div class="testimonial-source">
+                                                        <p class="light">
+                                                            <span class="company-name bold">
+                                                                Maybelline
+                                                            </span>
+                                                            <br/>
+                                                            David Brittain, President
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <button type="submit" value="send" class="btn btn-default contact-submit uppercase">Send Message</button>
-                                    </form>
+                                        <div class="item">
+                                            <div class="testimonial-desc">
+                                                <p class="light">
+                                                    I was very impressed by the <span class="bold">breadth of topics</span> that could be addressed in the scope of one project. The Right Brain technique appears to offer <span class="bold">possibilities for understanding</span> the consumer in ways that conventional research approaches might ignore or overlook.
+                                                </p>
+                                            </div>
+                                            <div class="testimonial-source">
+                                                <div class="logo-desc">
+                                                    <div class="testimonial-logo">
+                                                        <img src="public/img/testimonials/mcd.jpg" alt="McDonald's"/>
+                                                    </div>
+                                                    <div class="testimonial-source">
+                                                        <p class="light">
+                                                            <span class="company-name bold">
+                                                                McDonald's
+                                                            </span>
+                                                            <br/>
+                                                            Don Demski, Research Director
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="testimonial-desc">
+                                                <p class="light">
+                                                    "Right Brain Research is the <span class="bold">keystone of all</span> customer-focused marketing.<br class="hidden-xs hidden-sm"> The Right Brain People is an <span class="bold">essential ingredient</span> for successful marketing in this<br class="hidden-xs hidden-sm"> highly competitive, fast changing era."
+                                                </p>
+                                            </div>
+                                            <div class="testimonial-source">
+                                                <div class="logo-desc">
+                                                    <div class="testimonial-logo">
+                                                        <img src="public/img/testimonials/mdm.jpg" alt="MDM"/>
+                                                    </div>
+                                                    <div class="testimonial-source">
+                                                        <p class="light">
+                                                            <span class="company-name bold">
+                                                                MDM Inc.
+                                                            </span>
+                                                            <br/>
+                                                            Tom Marnell, President
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control hidden-xs" href="#testimonial-carousel" role="button" data-slide="prev">
+                                        <span class="left-arrow" aria-hidden="true">
+                                            <img src="public/img/common/arrow.jpg">
+                                        </span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control hidden-xs" href="#testimonial-carousel" role="button" data-slide="next">
+                                        <span class="left-arrow" aria-hidden="true">
+                                            <img src="public/img/common/arrow.jpg">
+                                        </span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="contact-details-section col-xs-12 col-sm-6 col-md-6">
-                                <div class="contact-map">
-                                    <div class="map-wrapper">
-                                        <div id="gmap_canvas">
+                        </div>
+                        <div class="blog-container primary">
+                            <div class="container-fluid">
+                                <div class="section-title-container">
+                                    <h2 class="section-title uppercase">
+                                        From The Blog
+                                    </h2>
+                                </div>
+                                <hr class="section-title-hr"/>
+                                <div class="section-content">
+                                    <div class="from-the-blog-content container">
+                                        <div class="blog-item col-xs-12 col-sm-4 col-md-4">
+                                            <div class="blog-image">
+                                                <img src="public/img/blog/bp-1.jpg" alt="blog-image"/>
+                                            </div>
+                                            <div class="blog-post-content">
+                                                <div class="blog-post-title uppercase">
+                                                    <h6 class="blog-post-title-heading">
+                                                        Blog Post Title    
+                                                    </h6>
+                                                </div>
+                                                <div class="blog-post-date">
+                                                    <p class="thin">
+                                                        September 10, 2016
+                                                    </p>
+                                                </div>
+                                                <div class="blog-post-snippet">
+                                                    <p class="thin">
+                                                        This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
+                                                    </p>
+                                                    <span class="read-more">
+                                                        <a href="#" class="read-more-link">read more &rarr;</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog-item col-xs-12 col-sm-4 col-md-4">
+                                            <div class="blog-image">
+                                                <img src="public/img/blog/bp-2.jpg" alt="blog-image"/>
+                                            </div>
+                                            <div class="blog-post-content">
+                                                <div class="blog-post-title uppercase">
+                                                    <h6 class="blog-post-title-heading">Blog Post Title</h6>
+                                                </div>
+                                                <div class="blog-post-date">
+                                                    <p class="thin">
+                                                        September 10, 2016
+                                                    </p>
+                                                </div>
+                                                <div class="blog-post-snippet">
+                                                    <p class="thin">
+                                                        This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
+                                                    </p>
+                                                    <span class="read-more">
+                                                        <a href="#" class="read-more-link">read more &rarr;</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog-item col-xs-12 col-sm-4 col-md-4">
+                                            <div class="blog-image">
+                                                <img src="public/img/blog/bp-3.jpg" alt="blog-image"/>
+                                            </div>
+                                            <div class="blog-post-content">
+                                                <div class="blog-post-title uppercase">
+                                                    <h6 class="blog-post-title-heading">Blog Post Title</h6>
+                                                </div>
+                                                <div class="blog-post-date">
+                                                    <p class="thin">
+                                                        September 10, 2016
+                                                    </p>
+                                                </div>
+                                                <div class="blog-post-snippet">
+                                                    <p class="thin">
+                                                        This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
+                                                    </p>
+                                                    <span class="read-more">
+                                                        <a href="#" class="read-more-link">read more &rarr;</a>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="contact-info-container">
-                                    <div class="row no-pad">
-                                        <div class="col-md-5 contact-info text-left bold">
-                                            <p class="uppercase title">The Right Brain People</p>
-                                            <p class="address light">279 Norseman Drive<br/>Cordova, TN, 38018</p>
-                                            <p class="email light"><span class="bold">E:</span> laura@rightbrainpeople.com</p>
-                                            <p class="phone light"><span class="bold">P:</span> 901-682-8569</p>
+                            </div>
+                        </div>
+                        <div class="contact-section">
+                            <div class="row no-pad">
+                                <div class="contact-form-section col-xs-12 col-sm-6 col-md-6">
+                                    <div class="contact-title text-center">
+                                        <h2 class="contact-title-heading uppercase">
+                                            Send Us A Message
+                                        </h2>
+                                    </div>
+                                    <div class="contact-form-wrapper">
+                                        <form class="contact-form" role="form" id="contact-form" action="https://formspree.io/anayar2@gmail.com">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" id="contact-name" placeholder="Full Name">
+                                                <input type="text" name="_gotcha" style="display:none;">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="email" class="form-control" id="contact-email" placeholder="E-mail Address">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea type="text" class="feedback-input form-control" placeholder="Message" id="contact-comment" name="message"></textarea>
+                                            </div>
+                                            <button type="submit" value="send" class="btn btn-default contact-submit uppercase">Send Message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contact-details-section col-xs-12 col-sm-6 col-md-6">
+                                    <div class="contact-map">
+                                        <div class="map-wrapper">
+                                            <div id="gmap_canvas">
+                                            </div>
                                         </div>
-                                        <div class="col-md-7 purple-banner-wrapper no-pad">
-                                            <div class="purple-banner">
-                                                <!-- Purple Cut Banner at Bottom -->
+                                    </div>
+                                    <div class="contact-info-container">
+                                        <div class="row no-pad">
+                                            <div class="col-md-5 contact-info text-left bold">
+                                                <p class="uppercase title">The Right Brain People</p>
+                                                <p class="address light">279 Norseman Drive<br/>Cordova, TN, 38018</p>
+                                                <p class="email light"><span class="bold">E:</span> laura@rightbrainpeople.com</p>
+                                                <p class="phone light"><span class="bold">P:</span> 901-682-8569</p>
+                                            </div>
+                                            <div class="col-md-7 purple-banner-wrapper no-pad">
+                                                <div class="purple-banner">
+                                                    <!-- Purple Cut Banner at Bottom -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -830,8 +842,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>                      
+                </div>                      
+            </div>
         </div>
         <!-- Javascript -->
         <script type="text/javascript" src="public/js/jquery.js"></script>
