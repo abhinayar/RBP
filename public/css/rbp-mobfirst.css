@@ -339,7 +339,7 @@ h1, h2, h3, h4, p, a, div {
 .desktop-nav ul li a {
     font-size: 16px;
     color: #fff;
-    font-family: 'MSThin';
+    font-family: 'MSLight';
     padding: 0px 15px;
 }
 
@@ -1504,7 +1504,7 @@ hr.section-title-hr {
 h6.blog-post-title-heading {
     letter-spacing: 0.1em;
     font-size: 14px;
-    font-family: 'MSBold';
+    font-family: 'MS';
 }
 
 .blog-post-content p {
