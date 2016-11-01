@@ -27,7 +27,7 @@ h2: 36px (testimonials)
 
 @font-face {
     font-family: MSThin;
-    src: url('../fonts/Montserrat-Thin.ttf');
+    src: url('../fonts/Montserrat-Light.ttf');
 }
 
 @font-face {
@@ -40,9 +40,26 @@ h2: 36px (testimonials)
     src: url('../fonts/Montserrat-Bold.ttf');
 }
 
-@font-face {
-    font-family: MSEdge;
-    src: url('../fonts/Montserrat-Thin.ttf');
+@media (min-width: 992px) {
+    @font-face {
+        font-family: MS;
+        src: url('../fonts/Montserrat-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: MSThin;
+        src: url('../fonts/Montserrat-Thin.ttf');
+    }
+
+    @font-face {
+        font-family: MSLight;
+        src: url('../fonts/Montserrat-Light.ttf');
+    }
+
+    @font-face {
+        font-family: MSBold;
+        src: url('../fonts/Montserrat-Bold.ttf');
+    }
 }
 
 html, body {
@@ -510,18 +527,17 @@ h1, h2, h3, h4, p, a, div {
 
     .landing .landing-content .landing-desc {
         color: #fff;
-        font-family: 'MSEdge';
+        font-family: 'MSThin';
         width: 40%;
         margin: 0;
         margin-top: 40px;
         font-size: 18px;
-        font-family: 'MSEdge';
         line-height: 1.5em;
         text-align: left;
     }
     
     .landing .landing-content .landing-desc p {
-        font-family: MSEdge;
+        font-family: MSThin;
     }
 
     .landing .landing-content .landing-buttons {
