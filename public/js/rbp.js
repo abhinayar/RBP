@@ -25,7 +25,9 @@ $(document).ready(function(){
             $(".landing .moving-bg").addClass("animate");
         }, 1000);   
    }
-    //google.maps.event.addDomListener(window, 'load', init_map);
+    $(window).load(function(){
+        google.maps.event.addDomListener(window, 'load', init_map);
+    });
     
     $(".mobile-hamburger").click(function(){
         $(".landing-nav .navigation").toggleClass("closed");
