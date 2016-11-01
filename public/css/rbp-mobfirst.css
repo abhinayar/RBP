@@ -27,7 +27,7 @@ h2: 36px (testimonials)
 
 @font-face {
     font-family: MSThin;
-    src: url('../fonts/Montserrat-Light.ttf');
+    src: url('../fonts/Montserrat-Thin.ttf');
 }
 
 @font-face {
@@ -415,21 +415,21 @@ h1, h2, h3, h4, p, a, div {
 
 /* Animated */
 .landing-scroll-bg {
-    -webkit-animation: moveSlideshow 10s linear infinite;
-    animation: moveSlideshow 10s linear infinite;
+    -webkit-animation: moveSlideshow 90s linear infinite;
+    animation: moveSlideshow 90s linear infinite;
 }
 
 @media (min-width: 550px) {
     .landing-scroll-bg {
-        -webkit-animation: moveSlideshowMid 5s linear infinite;
-        animation: moveSlideshowMid 5s linear infinite;
+        -webkit-animation: moveSlideshowMid 90s linear infinite;
+        animation: moveSlideshowMid 90s linear infinite;
     }
 }
 
 @media (min-width: 750px) {
     .landing-scroll-bg {
-        -webkit-animation: moveSlideshowTablet 5s linear infinite;
-        animation: moveSlideshowTablet 5s linear infinite;
+        -webkit-animation: moveSlideshowTablet 90s linear infinite;
+        animation: moveSlideshowTablet 90s linear infinite;
     }
 }
 
@@ -482,7 +482,7 @@ h1, h2, h3, h4, p, a, div {
     
     .landing-scroll-bg {
         position: absolute;
-        animation: moveSlideshowDesktop 6s linear infinite;
+        animation: moveSlideshowDesktop 60s linear infinite;
         height: 720px;
         background-image: url(../img/landing/logos.jpg);
         background-position: center right;
@@ -1761,4 +1761,62 @@ h2.contact-title-heading {
     }
 }
 
+/* Clients Modal */
+#clientModal .modal-content {
+    border-radius: 0px;
+    color: #fff;
+    background-image: url(../img/clients/purple-bg-underlay.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#clientModal .modal-header {
+    border-bottom: none;
+}
+
+#clientModal .modal-header h4 {
+    margin-top: 45px;
+    color: rgb(170, 170, 170);
+}
+
+#clientModal .client-modal-desc p {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#clientModal .client-modal-desc p a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+#clientModal .row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#clientModal ul {
+    margin: 0;
+    padding-left: 0px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    color: #fff;
+    line-height: 2em;
+}
+
+#clientModal button.close span {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    right: 25px;
+    top: 7px;
+}
+
+#clientModal .close-button a {
+    padding: 8px 26px !important;
+}
 
