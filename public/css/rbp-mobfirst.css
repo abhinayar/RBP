@@ -1853,12 +1853,12 @@ body.loading {
 	background: #fff;
 }
 
-.icon {
+.load-icon {
 	position: relative;
 	cursor: pointer;
 }
 
-.icon:after {
+.load-icon:after {
     position: absolute;
     content:'';
     width: 32px;
@@ -1884,5 +1884,698 @@ body.loading {
     transform: rotate(360deg);
   }
 }
+
+/* 
+Color Lib:
+---------------------
+Dark purple: #623c91
+Light purple: #beb0d4
+Dull white: #f8f8f8
+McD Red: #b64817
+Hardie Green: #006634
+Corvette Black: #050505
+Off black: #1d1f20
+*/
+
+/* Font sizes:
+----------------------
+Landing p: 18px;
+Other p: 14px;
+h4: 18px; (small heading)
+h2: 36px (testimonials)
+*/
+
+/* Templated Service Pages */
+.servicePage {
+    line-height: 1.5em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.servicePage img {
+    -webkit-image-rendering: crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.servicePage h1, .servicePage h2, .servicePage h4, .servicePage h6 {
+    margin: 0;
+    font-family: MS;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.servicePage p {
+    font-family: MSLight;
+}
+
+.servicePage .primary {
+    background: #623c91;
+    color: #fff;
+    font-family: MSLight;
+    letter-spacing: 0.01em;
+}
+
+.servicePage .secondary {
+    background: #fff;
+    color: #1d1f20;
+    font-family: MS;
+    letter-spacing: 0.01em;
+}
+
+.servicePage .off {
+    background: #fefefe;
+}
+
+.servicePage .primary .content-bold {
+    font-family: MS;
+}
+
+.servicePage .secondary .content-bold {
+    font-family: MSBold;
+}
+
+.servicePage .content-underline {
+    border-bottom: 1px solid;
+}
+
+.servicePage .primary .content-underline {
+    border-color: #fff;
+}
+
+.servicePage .secondary .content-underline {
+    border-color: #1d1f20;
+}
+
+.servicePage .service-landing {
+    height: auto;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.servicePage .service-landing.research {
+    background-image: url(../img/services/rightBrainResearch.jpg);
+}
+
+.servicePage .service-landing.segmentation {
+    background-image: url(../img/services/segmentation.jpg);
+    background-position: top top;
+}
+
+.servicePage .service-landing.strategy {
+    background-image: url(../img/services/strategyWorkshop.jpg);
+    background-position: top bottom;
+}
+
+.servicePage .service-landing .service-title {
+    padding-top: 65px;
+}
+
+.servicePage .service-landing .service-title-hr {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.servicePage .service-landing .service-desc {
+    width: 75%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.servicePage .service-landing .service-desc p {
+    font-family: MS;
+}
+
+@media (min-width: 768px) {
+    .clientPage .service-landing .service-desc p {
+        font-size: 18px;
+    }
+}
+
+.servicePage .service-landing .service-landing-arrow {
+    margin-top: 15px;
+}
+
+.servicePage .service-landing .service-landing-arrow a, .servicePage .service-landing .service-landing-arrow a:hover {
+    color: #fff;
+    font-size: 14px;
+}
+
+.servicePage .service-content-block {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.servicePage .service-content-block .col-xs-12 .service-text-content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.servicePage .service-content-block .col-xs-12 .service-text-content .content-start {
+    font-family: MS;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.servicePage .service-content-block.secondary .col-xs-12 .service-text-content .content-start {
+    font-family: MSBold;
+}
+
+.servicePage .service-content-block .service-text-content .service-text-list {
+    padding-left: 0px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.servicePage .service-content-block.secondary .service-text-content {
+    font-family: MSLight;
+}
+
+.servicePage .service-content-block .service-text-content .service-text-list li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.servicePage .service-content-block .service-text-content .service-text-list li:first-of-type {
+    margin-top: 0px;
+}
+
+.servicePage .service-list-item-content {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+.servicePage .service-list-item-content.first {
+    padding-top: 0px;
+}
+
+.servicePage .service-list-item-content .item-icon {
+    margin-bottom: 15px;
+}
+
+.servicePage .service-list-item-content .item-icon.interview {
+    margin-top: -15px;
+}
+
+.servicePage .service-list-item-content .item-icon img {
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.servicePage .service-list-item-content .item-desc {
+    width: 80%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.servicePage .call-to-action-block .call-to-action {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.servicePage .call-to-action-block .call-to-action p {
+    font-family: MS;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.servicePage .call-to-action-block .contact-link-container {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.servicePage .call-to-action-block a.contact, .servicePage .call-to-action-block a.contact:hover {
+    display: inline-block;
+    color: #fff;
+    width: 120px;
+    height: 38px;
+    border: 2px solid;
+    padding-top: 6px;
+    font-family: MS;
+    text-decoration: none;
+    text-align: center;
+}
+
+.servicePage .call-to-action-block.secondary a.contact, .servicePage .call-to-action-block.secondary a.contact:hover {
+    color: #1d1f20;
+}
+
+.servicePage .testimonial-block .testimonial-container {
+    background: none;
+}
+
+.servicePage .testimonial-block .testimonial-title {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+} 
+
+.servicePage .testimonial-block .testimonial-title h4 {
+    font-family: MSBold;
+    font-size: 21px;
+    text-transform: none;
+} 
+
+.servicePage .testimonial-block .testimonial {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.servicePage .testimonial-block .testimonial .quote, .servicePage .testimonial-block .testimonial .source {
+    width: 85%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.servicePage .testimonial-block .testimonial .source {
+    font-size: 16px;
+}
+
+.servicePage .testimonial-block .testimonial-hr {
+    margin: 15px 15px;
+}
+
+@media (min-width: 768px) {
+    .servicePage .off {
+        background: #fff;
+    }
+    
+    .servicePage .service-list-item-content .item-desc {
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .servicePage .service-list-item-content {
+        padding-top: 0px;
+    }
+    
+    .servicePage .service-list-item-content .item-icon.interview {
+        margin-top: 0px;
+    }
+    
+    .servicePage .call-to-action-block .call-to-action {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .servicePage .call-to-action-block .contact-link-container {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .servicePage .testimonial-block .testimonial-title {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    } 
+}
+
+@media (min-width: 992px) {
+    .servicePage .service-content-block {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .servicePage .service-content-block .col-xs-12 .service-text-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .servicePage .service-content-block.service-list {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+    
+    .servicePage .service-content-block.call-to-action-block {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    
+    .servicePage .testimonial-block .testimonial-hr {
+        margin: 30px 15px;
+        margin-bottom: 0px;
+    }
+    
+    .servicePage .testimonial-block .testimonial {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+}
+
+/* Client Page */
+.clientPage .service-desc p {
+    font-size: 16px;
+}
+
+.clientPage .service-landing.mcdonalds {
+    background-image: url(../img/brand-stories/bg/mcDonalds.jpg);
+}
+
+.clientPage .service-landing.hardie {
+    background-image: url(../img/brand-stories/bg/hardie.jpg);
+}
+
+.clientPage .service-landing.corvette {
+    background-image: url(../img/brand-stories/bg/corvette2.jpg);
+    background-position: center center;
+}
+
+.clientPage .service-title, .clientPage .service-title .client-logo, .clientPage .service-title h2 {
+    display: inline-block;
+}
+
+.clientPage .service-title .client-logo img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.clientPage .service-title h2 {
+    display: block;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+   .clientPage .service-title h2 {
+        display: inline-block;
+        margin-left: 10px;
+    } 
+    
+    .clientPage .service-title .client-logo img {
+        margin-top: -10px;
+    }
+}
+
+.clientPage .service-content-block .service-text-content .service-text-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.clientPage .service-content-block .service-text-content .service-text-list li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.clientPage .service-content-block.parallax-image {
+    height: 180px;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.clientPage .service-content-block.parallax-image.mcdonalds1 {
+    background-image: url(../img/clientStories/mcDonalds1.jpg);
+}
+
+.clientPage .service-content-block.parallax-image.mcdonalds2 {
+    height: 150px;
+    background-image: url(../img/clientStories/mcDonalds2.jpg);
+}
+
+.clientPage .service-content-block.parallax-image.jhardie1 {
+    height: 150px;
+    background-image: url(../img/clientStories/jHardie1.jpg);
+}
+
+.clientPage .service-content-block.parallax-image.jhardie2 {
+    height: 150px;
+    background-image: url(../img/clientStories/jHardie2.jpg);
+}
+
+.clientPage .service-content-block.parallax-image.corvette1 {
+    height: 150px;
+    background-image: url(../img/clientStories/corvette1.jpg);
+}
+
+.clientPage .service-content-block.parallax-image.corvette2 {
+    height: 150px;
+    background-image: url(../img/clientStories/corvette2.jpg);
+    background-position: center center;
+}
+
+.clientPage .service-content-block.parallax-image.contains-text h4 {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.clientPage .subsection img {
+    max-width: 120%;
+    margin-left: -10%;
+}
+
+.clientPage .subsection .subsection-title {
+    font-size: 21px !important;
+}
+
+.clientPage .subsection hr {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .clientPage .subsection img {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width: 992px) {
+    .clientPage .service-content-block.parallax-image {
+        height: 220px;
+    }
+    
+    .clientPage .service-content-block.parallax-image.contains-text h4 {
+        margin-top: 10px;
+    }
+}
+
+/* Side Images */
+/* McDonalds */
+@media (min-width: 768px) {
+    .clientPage .service-content-block.change {
+        padding: 0;
+        height: 600px;
+    }
+    
+    .clientPage .service-content-block.no-change {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .clientPage .service-content-block.long {
+        padding: 0;
+        height: 800px;
+    }
+
+    
+    .clientPage .service-content-block .container.change {
+        width: 100%;
+    }
+    
+    .clientPage .service-content-block .container .col-sm-6 {
+        padding: 0;
+    }
+    
+    .clientPage .service-text-content {
+        width: 80%;
+        line-height: 2em;
+        padding-top: 60px;
+    }
+    
+    .clientPage .no-change .service-text-content {
+        padding-top: 0px;
+    }
+    
+    .clientPage .service-text-content.cv1 {
+        padding-top: 25%;
+    }
+    
+    .clientPage .service-text-content.cv2 {
+        padding-top: 35%;
+    }
+    
+    .clientPage .service-text-content.cv3 {
+        padding-top: 15%;
+    }
+    
+    .clientPage .service-text-content.less {
+        padding-top: 90px;
+    }
+    
+    .clientPage .sideImage {
+        width: 100%;
+        min-height: 600px;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .clientPage .sideImage.mcd1 {
+        background-image: url(../img/clientStories/pageSides/drivethru.jpg);
+        background-position: center center;
+    }
+    
+    .clientPage .sideImage.mcd2 {
+        background-image: url(../img/clientStories/pageSides/combo.jpg);
+    }
+    
+    .clientPage .sideImage.mcd3 {
+        background-image: url(../img/clientStories/pageSides/menu.jpg);
+    }
+    
+    .clientPage .sideImage.jh1 {
+        background-image: url(../img/clientStories/pageSides/hardieplank.jpg);
+    }
+    
+    .clientPage .sideImage.jh2 {
+        background-image: url(../img/clientStories/pageSides/jh2.jpg);
+    }
+    
+    .clientPage .sideImage.jh3 {
+        background-image: url(../img/clientStories/pageSides/jh3.jpg);
+    }
+    
+    .clientPage .sideImage.jh4 {
+        background-image: url(../img/clientStories/pageSides/jh4.jpg);
+    }
+    
+    .clientPage .sideImage.jh5 {
+        background-image: url(../img/clientStories/pageSides/jh5.jpg);
+    }
+    
+    .clientPage .sideImage.cv1 {
+        background-image: url(../img/clientStories/pageSides/cv1.jpg);
+    }
+    
+    .clientPage .sideImage.cv2 {
+        background-image: url(../img/clientStories/pageSides/cv2.jpg);
+    }
+    
+    .clientPage .sideImage.cv3 {
+        background-image: url(../img/clientStories/pageSides/cv3.jpg);
+        height: 800px;
+    }
+}
+
+@media (min-width: 850px) {
+    .clientPage .service-text-content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20%;
+    }
+    
+    .clientPage .service-text-content.less {
+        padding-top: 30%;
+    }
+    
+    .clientPage .service-text-content.jh4, .clientPage .service-text-content.jh5 {
+        padding-top: 16%;
+    }
+    
+    .clientPage .service-text-content.cv1 {
+        padding-top: 30%;
+    }
+    
+    .clientPage .service-text-content.cv3 {
+        padding-top: 25%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .clientPage .service-content-block.long {
+        padding: 0;
+        height: 700px;
+    }
+    
+    .clientPage .sideImage.cv3 {
+        background-image: url(../img/clientStories/pageSides/cv3.jpg);
+        height: 700px;
+    }
+    
+    .clientPage .service-text-content {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 13%;
+    }
+    
+    .clientPage .service-text-content.less {
+        padding-top: 20%;
+    }
+    
+    .clientPage .service-one-col .service-text-content {
+        max-width: 750px !important;
+    }
+    
+    .clientPage .service-text-content.jh1, .clientPage .service-text-content.jh2 {
+        padding-top: 15%;
+    }
+    
+    .clientPage .service-text-content.jh3 {
+        padding-top: 10%;
+    }
+    
+    .clientPage .service-text-content.jh4, .clientPage .service-text-content.jh5 {
+        padding-top: 7%;
+    }
+    
+    .clientPage .service-text-content.cv1, .clientPage .service-text-content.cv2, .clientPage .service-text-content.cv3 {
+        width: 80%;
+        padding-top: 35%;
+    }
+    
+    .clientPage .service-text-content.cv3 {
+        padding-top: 19%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .clientPage .service-text-content.jh1, .clientPage .service-text-content.jh2 {
+        padding-top: 20%;
+    }
+    
+    .clientPage .service-text-content.jh3, .clientPage .service-text-content.jh4 {
+        padding-top: 17%;
+    }
+    
+    .clientPage .service-text-content.jh5 {
+        padding-top: 13%;
+    }  
+    
+    .clientPage .service-text-content.cv1, .clientPage .service-text-content.cv2, .clientPage .service-text-content.cv3 {
+        width: 75%;
+        padding-top: 25%;
+    }
+    
+    .clientPage .service-text-content.cv3 {
+        padding-top: 17%;
+    }
+}
+@media (min-width: 1800px) {
+    .clientPage .service-content-block .container.change {
+        max-width: 1440px;
+    }
+
+}
+    
+    
+footer.subpage-footer {
+    background: #000;
+    height: 200px;
+}
+
 
 

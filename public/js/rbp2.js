@@ -51,9 +51,10 @@ $(document).ready(function(){
     //google.maps.event.addDomListener(window, 'load', init_map);
 });
 
+/*
 $(window).load(function(){
     $("body").addClass("loading");
-    $(".icon").removeClass("hidden");
+    $(".load-icon").removeClass("hidden");
     
     var snap = Snap.select('.loader');
     var arc1 = snap.select('#arc1');
@@ -88,7 +89,8 @@ $(window).load(function(){
     
     setTimeout(function(){
         $("body").removeClass("loading");
-        $(".icon").hide().addClass("hidden");
+        $(".load-icon").hide().addClass("hidden");
         $(".non-loader-wrapper").hide().removeClass("hidden").fadeIn("750");
     }, 750);
 })
+*/
