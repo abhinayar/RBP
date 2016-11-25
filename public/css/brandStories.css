@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url('../fonts/Avenir-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Avenir-Bold';
+  src: url('../fonts/Avenir-Heavy.ttf');
+}
+
 /* RBP Brand Stories Stylesheet */
 /* ERIC MYERS CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ */
@@ -191,6 +206,7 @@ Sec Font: Roboto, Roboto Bold
 
 b {
     font-weight: 900;
+	font-family: 'Avenir-Bold';
 }
 
 em {
@@ -267,6 +283,7 @@ body {
 .subpage-title h3 {
     font-size: 16px;
     font-weight: 900;
+	font-family: 'Avenir-Bold';
     text-align: left;
     margin-left: 5px;
     margin-top: 225px;
@@ -274,6 +291,7 @@ body {
 
 .subpage-subtitle h3 {
     font-weight: 900;
+	font-family: 'Avenir-Bold';
     margin-top: 55px;
     font-size: 16px;
 }
@@ -469,6 +487,7 @@ body {
 .icon-label .lbl {
     margin-top: 30px;
     font-weight: 500;
+	font-family: 'Avenir';
 }
 
 .subpage-section ul {
@@ -668,7 +687,7 @@ body {
 
 .solution-number .num-lbl {
     margin-top: 25px;
-    font-family: 'Avenir';
+    font-family: 'Avenir-Bold';
     font-weight: 900;
     margin-bottom: 45px;
 }
@@ -679,7 +698,7 @@ body {
 }
 
 .endline {
-    font-family: 'Avenir';
+    font-family: 'Avenir-Bold';
     font-size: 21px;
     font-weight: 900;
 }
