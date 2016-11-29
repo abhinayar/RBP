@@ -1,5 +1,3 @@
-$.noConflict
-
 $(document).ready(function(){
 	function changeNavBG() {
         var top = $(window).scrollTop(); 
@@ -19,6 +17,6 @@ $(document).ready(function(){
     
     $(window).scroll(function(){
 		console.log("scrolled");
-       changeNavBG(); 
+      	changeNavBG(); 
     });
 });
