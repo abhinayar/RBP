@@ -396,10 +396,10 @@ body {
         height: 585px;
     }
     
-    .subpage-title h1 {
+    .subpage-title h1, .jamesHardie .subpage-title h1 {
         font-size: 80px;
     }
-    
+	
     .subpage-title h3 {
         margin-top: 225px;
         margin-left: 5px;
