@@ -1,14 +1,15 @@
-$(document).ready(function(){	
-	/* Hiding and showing hidden body items on load */
+setTimeout(function(){
+	$(".show-start").addClass("hidden");
+	new WOW().init();
+}, 2500);
+
+$(window).load(function(){	
 	setTimeout(function(){
 		$(".show-start").fadeOut("1200");
 		$(".hide-start").removeClass("hidden");
 	}, 2500);
-	setTimeout(function(){
-		$(".show-start").addClass("hidden");
-		new WOW().init();
-	}, 2500);
 	
+	/* Hiding and showing hidden body items on load */	
 	function changeNavBG() {
         var top = $(window).scrollTop(); 
 		console.log(top);
