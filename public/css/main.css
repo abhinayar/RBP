@@ -270,7 +270,7 @@ em {
   height: 100vh;
   font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
   -webkit-font-smoothing: antialiased;
-  background-color: #1B101F;
+  background-color: #623c91;
 }
 
 .loader-wrapper::before {
@@ -280,7 +280,7 @@ em {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #632c91 50% 50% no-repeat;
+  background: #623c91 50% 50% no-repeat;
   background-size: cover;
   opacity: 0.25;
 }
