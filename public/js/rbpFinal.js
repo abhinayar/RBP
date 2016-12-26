@@ -52,6 +52,10 @@ $(window).load(function(){
 		$(".navigation .mobile-nav").removeClass("show");
 	});
 	
+	$(".mob-nav-items a").click(function(){
+		$(".navigation .mobile-nav").removeClass("show");
+	})
+	
 	$(".solution-card").click(function(){
 		var target = $(this).attr("data-target");
 		window.location = target;
