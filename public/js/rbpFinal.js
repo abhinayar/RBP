@@ -1,11 +1,9 @@
-setTimeout(function(){
-	$(".show-start").addClass("hidden");
-	new WOW().init();
-}, 2500);
-
 $(window).load(function(){	
 	setTimeout(function(){
-		$(".show-start").fadeOut("1200");
+		$(".show-start").addClass("hidden");
+		new WOW().init();
+	}, 2500);
+	setTimeout(function(){
 		$(".hide-start").removeClass("hidden");
 	}, 2500);
 	
