@@ -1,11 +1,13 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+	/* Hiding and showing hidden body items on load */
 	setTimeout(function(){
 		$(".show-start").fadeOut("1200");
 		$(".hide-start").removeClass("hidden");
-	}, 1200);
+	}, 2500);
 	setTimeout(function(){
 		$(".show-start").addClass("hidden");
-	}, 2400);
+		new WOW().init();
+	}, 2500);
 	
 	function changeNavBG() {
         var top = $(window).scrollTop(); 
@@ -27,8 +29,6 @@ $(document).ready(function(){
 		console.log("scrolled");
       	changeNavBG(); 
     });
-	
-	new WOW().init();
 	
 	$(".small-image img").click(function(){
 		function switchSources(obj1, obj2) {
