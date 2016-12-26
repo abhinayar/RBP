@@ -1,3 +1,5 @@
+$(".hide-start").addClass("hidden");
+
 $(window).load(function(){	
 	setTimeout(function(){
 		$(".show-start").addClass("hidden");
