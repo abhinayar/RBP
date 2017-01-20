@@ -1,3 +1,9 @@
+//Right Brain People JS
+//Dependencies: JQuery
+//By Abhi Nayar for SemiErect
+//Copyright 2017, All Rights Reserved.
+//Please do not copy this code in part or full without contacting the author at anayar2[at]gmail[dot]com
+
 $(".hide-start").addClass("hidden");
 
 $(window).load(function(){	
@@ -54,6 +60,11 @@ $(window).load(function(){
 	
 	$(".mob-nav-items a").click(function(){
 		$(".navigation .mobile-nav").removeClass("show");
+	})
+	
+	$(".nav-items a").click(function(){
+		$(".nav-items a").removeClass("active");
+		$(this).addClass("active");
 	})
 	
 	$(".solution-card").click(function(){

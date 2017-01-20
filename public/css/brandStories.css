@@ -1,3 +1,29 @@
+/* 
+Right Brain People Index page stylesheet By Abhi Nayar for SemiErect Design Co.
+Copyright 2016, All Rights belong to Right Brain People
+For questions please contact anayar2[at]gmail[dot]com 
+*/
+
+/* 
+Color Lib:
+---------------------
+Dark purple: #623c91
+Light purple: #beb0d4 b5a2d4
+Dull white: #f8f8f8
+McD Red: #b64817
+Hardie Green: #006634
+Corvette Black: #050505
+Off black: #1d1f20
+*/
+
+/* 
+Fonts:
+----------------------
+Headings and Index: Avenir (Licensed)
+Body: Roboto (Google Font)
+*/
+
+
 @font-face {
   font-family: 'Avenir';
   src: url('Avenir-Medium.eot');
@@ -1415,7 +1441,7 @@ footer .right {
 }
 
 .designer {
-	text-align: left;
+	text-align: center;
 	color: #fff;
 	font-size: 10px;	
 	opacity: 0.2;
