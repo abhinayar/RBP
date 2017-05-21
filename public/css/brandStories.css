@@ -386,7 +386,8 @@ body {
     background-color: #fff;
     color: #fff;
     font-size: 18px; 
-    font-family: 'Roboto', Serif;
+    font-family: 'Avenir', Serif;
+    font-weight: 500;
     background-image: url()
 }
 
