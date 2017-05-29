@@ -1,18 +1,11 @@
-$(".hide-start").addClass("hidden");
-
-$(window).load(function(){	
-	setTimeout(function(){
-		$(".show-start").addClass("hidden");
-		new WOW().init();
-	}, 2500);
-	setTimeout(function(){
-		$(".hide-start").removeClass("hidden");
-	}, 2500);
+$(".show-start").addClass("hidden");
+$(window).load(function(){	  
+    new WOW().init();
 	
 	/* Hiding and showing hidden body items on load */	
 	function changeNavBG() {
         var top = $(window).scrollTop(); 
-		console.log(top);
+		//console.log(top);
         
 		if (top === 0) {
 			$(".navigation").removeClass("dark");
@@ -27,7 +20,7 @@ $(window).load(function(){
     changeNavBG();
     
     $(window).scroll(function(){
-		console.log("scrolled");
+		//console.log("scrolled");
       	changeNavBG(); 
     });
 	

@@ -98,18 +98,18 @@
 		</script>
     </head>
     <body id="home" class="">
-    	<div class="loader-wrapper show-start">
+    	<div class="loader-wrapper hidden">
     		<div class="loader">
 			  <div class="loader__figure"></div>
 			</div>
     	</div>
       	<!-- Navigation -->
-       	<div class="navigation hidden hide-start">
+       	<div class="navigation ">
            <div class="container">
               <div class="nav-container">
                   <div class="pull-left hero-image">
                        <div class="nav-logo-container">
-                           <a href="index"><img src="public/img/common/rbpSmLogoFull.png" alt="RBP Hero Image" class="nav-logo"/></a>
+                           <img src="public/img/common/rbpSmLogoFull.png" alt="RBP Hero Image" class="nav-logo"/>
                        </div>
                    </div>
                    <div class="pull-right nav-items">
@@ -123,7 +123,7 @@
                    				</div>
                    				<div class="mob-nav-items">
                    					<div class="mob-nav-item">
-										<a href="">
+										<a href="/">
 										Home
 										</a>
 									</div>
@@ -151,7 +151,7 @@
                    	   </div>
                        <div class="nav-list hidden-xs">
                            <div class="nav-item">
-                               <a href="" class="active">Home</a>
+                               <a href="/" class="active">Home</a>
                            </div>
                             <div class="nav-item">
                                <a href="#our-clients">Clients</a>
@@ -170,7 +170,7 @@
               </div>
            </div>
        </div>
-        <div class="page-body hidden hide-start">
+        <div class="page-body">
             <div class="page-landing">
               <div class="container">
                  <div class="row">
@@ -181,7 +181,7 @@
                            </div>
                            <br/>
                            <div class="landing-desc wow fadeIn">
-                               We discover your consumers’ emotional needs and barriers and help you use this information to strengthen your brand.
+                             We discover your consumers’ emotional needs and barriers and help you use this information to strengthen your brand. To learn more about that elusive word 'brand', read our whitepaper- <br><em>What Is a Brand After All?</em>
                            </div>
                            <br/>
                            <div class="landing-buttons wow fadeIn" data-wow-delay="400ms">
@@ -189,7 +189,7 @@
                                    <a href="#contact">Hire Us</a>
                                </div>
                                 <div class="button secondary our-clients">
-                                   <a href="#whitepaper">Whitepaper</a>
+                                   <a href="WhatIsABrandAfterAll.pdf">Whitepaper</a>
                                </div>
                            </div>
                            <div class="landing-arrow wow fadeIn" data-wow-delay="800ms">
@@ -236,7 +236,7 @@
                     <div class="solutions-container container-fluid no-pad">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4 text-center no-pad">
-                                <div class="solution-card research wow fadeIn" data-wow-delay="0ms" data-target="RightBrainResearch">
+                                <div class="solution-card research wow fadeIn" data-wow-delay="0ms" data-target="RightBrainResearch.html">
                                     <div class="solution-content">
                                         <div class="solution-number">
                                             1
@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 text-center no-pad">
-                                <div class="solution-card segmentation wow fadeIn" data-wow-delay="300ms" data-target="RightBrainTypology">
+                                <div class="solution-card segmentation wow fadeIn" data-wow-delay="300ms" data-target="RightBrainTypology.html">
                                     <div class="solution-content">
                                         <div class="solution-number">
                                             2
@@ -266,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 text-center no-pad">
-                                <div class="solution-card strategy wow fadeIn" data-wow-delay="600ms" data-target="RightBrainStrategy">
+                                <div class="solution-card strategy wow fadeIn" data-wow-delay="600ms" data-target="RightBrainStrategy.html">
                                     <div class="solution-content">
                                         <div class="solution-number">
                                             3
@@ -318,7 +318,7 @@
                                     </div>
                                     <div class="brand-story-button">
                                             <div class="button secondary">
-                                                <a href="McDonaldsStory">Read More</a>
+                                                <a href="McDonaldsStory.html">Read More</a>
                                             </div>
                                         </div>
                                   </div>
@@ -351,7 +351,7 @@
                                         </div>
                                         <div class="brand-story-button">
                                             <div class="button secondary">
-                                                <a href="JamesHardieStory">Read More</a>
+                                                <a href="JamesHardieStory.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -381,7 +381,7 @@
                                         </div>
                                         <div class="brand-story-button">
                                             <div class="button secondary">
-                                                <a href="JaredsGalleriaStory">Read More</a>
+                                                <a href="JaredsGalleriaStory.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -408,7 +408,7 @@
                                         </div>
                                         <div class="brand-story-button">
                                             <div class="button secondary">
-                                                <a href="CorvetteStory">Read More</a>
+                                                <a href="CorvetteStory.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -620,65 +620,12 @@
                                 </div>
                                 <hr class="section-hr">
                                 <div class="section-desc text-center">
-                                    We are the thought leaders in our field and our blog is full of useful information for individuals and corporations. <a href="/blog">Our blog is coming soon.</a>
+                                    We are the thought leaders in our field and our blog is full of useful information for individuals and corporations. <a href="/blog">Visit the blog</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="row blog-row hidden">
-                        	<div class="col-xs-12 col-sm-4 wow fadeIn blog-post" data-wow-delay="0ms">
-                        		<div class="blog-post-content">
-                        			<div class="blog-post-image">
-                        				<img src="public/img/main/blog/bp-1.jpg" alt="Blog Image Alt"/>
-                        			</div>
-                        			<div class="blog-post-title">
-                        				<h3>Blog Post Title</h3>
-                        			</div>
-                        			<div class="blog-post-excerpt">
-                        				This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
-                        			</div>
-                        			<div class="blog-post-button pull-right">
-                        				<div class="blog-read-more">
-                        					<a href="#">Read More &rarr;</a>
-                        				</div>
-                        			</div>
-                        		</div>
-                        	</div>
-                        	<div class="col-xs-12 col-sm-4 wow fadeIn blog-post" data-wow-delay="300ms">
-                        		<div class="blog-post-content">
-                        			<div class="blog-post-image">
-                        				<img src="public/img/main/blog/bp-2.jpg" alt="Blog Image Alt"/>
-                        			</div>
-                        			<div class="blog-post-title">
-                        				<h3>Blog Post Title</h3>
-                        			</div>
-                        			<div class="blog-post-excerpt">
-                        				This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
-                        			</div>
-                        			<div class="blog-post-button pull-right">
-                        				<div class="blog-read-more">
-                        					<a href="#">Read More &rarr;</a>
-                        				</div>
-                        			</div>
-                        		</div>
-                        	</div>
-                        	<div class="col-xs-12 col-sm-4 wow fadeIn blog-post" data-wow-delay="600ms">
-                        		<div class="blog-post-content">
-                        			<div class="blog-post-image">
-                        				<img src="public/img/main/blog/bp-3.jpg" alt="Blog Image Alt"/>
-                        			</div>
-                        			<div class="blog-post-title">
-                        				<h3>Blog Post Title</h3>
-                        			</div>
-                        			<div class="blog-post-excerpt">
-                        				This is an example blog post. Hopefully eventually content from the blog will be pulled here. We should be able to do that pretty easily but it depends on WP functio...
-                        			</div>
-                        			<div class="blog-post-button pull-right">
-                        				<div class="blog-read-more">
-                        					<a href="#">Read More &rarr;</a>
-                        				</div>
-                        			</div>
-                        		</div>
-                        	</div>
+                        <div class="row blog-row">
+                          <!-- jQuery will populate -->
                         </div>
                     </div>
 				</div>
@@ -687,15 +634,40 @@
                       <div class="row">
                           <div class="col-xs-12 col-sm-6 wow fadeIn stat text-center" data-wow-delay="0ms">
                               <div class="stat-headline text-center">
-                                <h3>Whitepaper : <span class="light">What Is A Brand?</span></h3>
+                                <h3>Whitepaper : <br class="hidden-md hidden-lg"><span class="light">What Is A Brand?</span></h3>
                               </div>
                           </div>
                           <div class="col-xs-12 col-sm-6 wow fadeIn stat text-center" data-wow-delay="300ms">
                               <div class="stat-headline text-center">
-                                  <a class="purple" href="RightBrainPeopleWhitepaper.pdf">Download Now</a>
+                                  <a class="purple" href="WhatIsABrandAfterAll.pdf">Download Now</a>
                               </div>
                           </div>
                       </div>
+                  </div>
+                </div>
+                <div class="page-section secondary off no-pad" id="founder-section">
+                    <div class="container-fluid no-pad">
+                     <div class="row">
+                      <div class="hidden-xs col-sm-4 no-pad founder-image">
+                        
+                      </div>
+                      <div class="col-xs-12 col-sm-8 no-pad">
+                          <div class="founder-info">
+                              <div class="founder-name stat-headline">
+                                  <b>Charles T. Kenny</b>
+                              </div>
+                              <div class="founder-pos">
+                                  Founder
+                              </div>
+                          </div> 
+                          <br>
+                          <div class="founder-desc">
+                              With a bachelor’s degree from the University of Notre Dame and a Ph.D. in Psychology from Clark University, Dr. Kenny saw the application of his academic expertise to the commercial world early on. He founded the strategic market research firm, The Right Brain People, in 1972. 
+                              <br><br>
+                              Forty years later, his client list is a “who’s who” of major companies, including 22 of the top 40 advertisers on the Advertising Age list. Using two proprietary methods – Right Brain Research and Brand Strategy Development – Dr. Kenny has worked with more than 600 corporate clients and organizations in 225 product and service categories. Today he is recognized as one of the top consumer psychologists in the world.
+                          </div>        
+                      </div>
+                     </div>
                   </div>
                 </div>
            		<div class="page-section primary contact" id="contact">
@@ -780,7 +752,7 @@
            						<div class="footer-navigation">
            							<div class="nav-items">
            								<div class="nav-item">
-           									<a href="index">Home</a>
+           									<a href="/">Home</a>
            								</div>
            								<div class="nav-item">
            									<a href="#our-clients">Clients</a>
@@ -789,7 +761,7 @@
            									<a href="#what-we-do">What We Do</a>
            								</div>
            								<div class="nav-item">
-           									<a href="#">Blog</a>
+           									<a href="/blog">Blog</a>
            								</div>
            								<div class="nav-item">
            									<a href="#contact">Contact</a>
@@ -805,12 +777,12 @@
            									</a>
            								</div>
            								<div class="social-icon">
-           									<a href="#">
+           									<a href="https://www.facebook.com/rightbrainpeople/">
            										<i class="fa fa-facebook"></i>
            									</a>
            								</div>
            								<div class="social-icon">
-           									<a href="#">
+           									<a href="https://twitter.com/RightBrainPeeps">
            										<i class="fa fa-twitter"></i>
            									</a>
            								</div>
@@ -841,5 +813,34 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- LOCAL JS -->
         <script src="public/js/rbpFinal.js"></script>
+        <script>
+          $(document).ready(function() {
+            $.get("http://rightbrainpeople.com/blog/?json=get_recent_posts", function(data) {
+              //posts array
+              var posts = data.posts;
+
+              for (var i = 0; i < 3; i++) {
+                //Get each item from post
+                var post = posts[i];
+                var title = post.title_plain;
+                var excerpt = post.excerpt;
+                var thumbnail = post.thumbnail_images.medium_large.url;
+                var url = post.url;
+                
+                if(title.length > 54) {
+                  title = title.substring(0, 45) + "...";
+                } if (title.length < 27) {
+                  title += "<br><br>";
+                }
+
+                //Create html object
+                var html = '<div class="col-xs-12 col-sm-4 wow fadeIn blog-post" data-wow-delay="0ms"> <div class="blog-post-content"> <div class="blog-post-image"> <img src="' + thumbnail + '" alt="' + title + '"/> </div> <div class="blog-post-title"> <h3>' + title + '</h3> </div> <div class="blog-post-excerpt">' + excerpt + '</div> <div class="blog-post-button pull-right"> <div class="blog-read-more"> <a href="' + url + '">Read More &rarr;</a> </div> </div> </div> </div>'
+
+                //Append it
+                $(".row.blog-row").append(html);
+              }
+            });
+          });
+        </script>
     </body>
 </html>
